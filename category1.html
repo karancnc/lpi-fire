@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>LPI-fire</title>
+     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+     <link rel="stylesheet" href="css/swiper.min.css" />
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+     <link rel="stylesheet" href="fonts/stylesheet.css">
+     <link rel="stylesheet" href="css/screen.css">
+     <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+     <!-- cart sidebar start -->
+     <div class="overlay"></div>
+     <div class="mini_cart">
+          <div class="mini_cart_header">
+               <div class="inner d_flex d_flex_ac d_flex_jb">
+                    <div class="icon_title">
+                         <span><img src="images/my_shopping_cart_icon.svg" alt=""></span>
+                         <h2>My <em>Shopping</em> cart</h2>
+                    </div>
+                    <div class="right_m d_flex d_flex_ac">
+                         <a href="#" class="white_btn">View cart <span></span></a>
+                         <span class="cart_close"><img src="images/cart_close.svg" alt=""></span>
+                    </div>
+               </div>
+               <div class="minimum_cart_note">
+                  <img src="images/mini_cart_red_icon.svg" alt="">  Minimum Cart - <strong>$50</strong>
+               </div>
+          </div>
+          <!-- cart empty -->
+          <!-- <div class="mini_cart_empty">
+               <img src="images/mini_cart_empty.svg" alt="">
+               <h4>No items in your cart</h4>
+               <p>Items you will add to your cart will appear here.</p>
+          </div> -->
+          <div class="mini_cart_content">
+               <div class="mini_cart_list">
+                    <ul class="mini_cart_item">
+                         <li>
+                              <a href="#"> <img src="images/cart_item1.jpg" alt=""> </a>
+                         </li>
+                         <li>
+                              <a href="#" class="link">Buckeye 2.5lb Fire Extinguisher with Vehicle Bracket</a>
+                              <h4><img src="images/tag.png" alt=""> Part Number: LPI-CCHS</h4>
+                              <h5>$49.99 price per unit</h5>
+                              <p class="price"> 
+                                   <span class="amount"><bdi><span class="symbol">$</span>49.99</bdi></span>                                
+                              </p>                              
+                         </li>
+                         <li>
+                              <div class="edit_delete_btn">
+                                   <a href="#" class="mini_edit">
+                                        <img src="images/edit_i.svg" alt="">
+                                        <div class="tooltip"> Edit fields</div>
+                                   </a>
+                                   <a href="#" class="mini_delete">
+                                        <img src="images/delete_i.svg" alt="">
+                                        <div class="tooltip"> Remove item </div>
+                                   </a>
+                              </div>
+                              <div class="quantity">
+                                    <div class="counter">
+                                         <button class="decrement"><img src="images/decrement.svg" alt=""></button>
+                                         <input type="number" class="input-text qty text" value="1" min="1" max="20" step="1" inputmode="numeric" autocomplete="off">
+                                         <button class="increment"><img src="images/increment.svg" alt=""></button>
+                                    </div>
+                              </div>
+                         </li>
+                    </ul>
+                    
+               </div>
+          </div>
+
+
+          <div class="mini_cart_bottom">
+              <div class="total d_flex d_flex_jb d_flex_ac">
+                    <h4> Subtotal</h4>
+                    <span class="amount"><bdi><span>$</span>00.00</bdi></span>
+               </div> 
+               <div class="note d_flex d_flex_jb d_flex_ac">
+                    <span><img src="images/note.svg" alt=""></span>
+                    <p>PLEASE NOTE: Freight is additional and will be added onto the invoice once order ships.</p>
+               </div>
+               <div class="btn_col d_flex d_flex_jb d_flex_ac">
+                    <a href="#" class="continue_shopping">Continue shopping</a>
+                    <a href="#" class="orange_btn">Proceed to Checkout</a>
+               </div>
+          </div>
+     </div>
+     <!-- cart sidebar end -->
+     <header>
+          <div class="top_header d_flex d_flex_je">
+               <ul class="links d_flex">
+                    <li><a href="#"><img src="images/order_form.svg" alt=""> Order Form Text </a></li>
+                    <li><a href="#"><img src="images/talk_expert.svg" alt=""> Talk to an expert! <span class="text">(201) 343-3330</span> </a></li>
+               </ul>
+               <div class="ticker">
+                    <ul class="active">
+                         <li><img src="images/shop_icon.svg" alt=""> Now shipping from 3 locations!</li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>California</strong></li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>Texas</strong></li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>New Jersey</strong></li>
+                    </ul>
+                    <ul>
+                         <li><img src="images/exit_emergency_icon.svg" alt=""> Exit & Emergency signs are now available! <a href="#">Discover more</a></li>
+                    </ul>
+                    <ul>
+                         <li><img src="images/mini_cart.svg" alt=""> Minimum Cart - <strong>$50</strong> </li>                         
+                    </ul>                     
+               </div>
+          </div>
+          <div class="mid_header">
+               <div class="wrapper d_flex d_flex_ac d_flex_jb">
+                    <div class="fire_logo">
+                         <div class="hambarger"><img src="images/hambarger.svg" alt=""></div>
+                         <a href="index.html" class="brand"><img src="images/brand.svg" alt=""></a>
+                         <span>Safety, <em>Delivered.</em></span>
+                    </div>
+                    <div class="right_col d_flex d_flex_ac">
+                         <div class="mobile_search"> <img src="images/search_icon.svg" alt=""> </div>
+                         <div class="search_col">
+                              <form>
+                                   <input type="text" class="in" placeholder="What are you looking for?">
+                                   <input type="submit" class="sub">
+                              </form>
+                         </div>
+                         <div class="my_account_user">
+                              <div class="user">
+                                   <div class="user_icon">
+                                        <img src="images/user.svg" alt="">
+                                   </div>
+                                   <div class="icon_text">
+                                        <div class="sign_register">
+                                             <a href="#" class="signin">Sign in</a> <span>/</span>
+                                             <a href="#" class="register">Register</a>
+                                        </div>
+                                        <!-- <div class="user_login">
+                                             <span>Maryann Schwartz</span>
+                                             <span>My account</span>
+                                        </div> -->
+                                   </div>
+                              </div>
+                              <div class="overlay1"></div>
+                              <div class="my_account_dropdown">
+                                   <div class="back">
+                                        <img src="images/arrow_s.svg" alt="">
+                                   </div>
+                                   <div class="my_account_user_signin">
+                                        <a href="#" class="orange_btn" >Sign-in</a>
+                                        <p>New to LPI? <a href="#">Sign up here</a></p>
+                                   </div>
+                                   <!-- <div class="my_account_user_login">
+                                        <span class="user_i"><img src="images/user_i.png" alt=""></span><span class="user_text">Maryann Schwartz</span>
+                                   </div> -->
+                                   <ul class="my_account_list">
+                                        <li><a href="#"><span class="text"><img src="images/my_order_i.svg" alt=""></span>My Orders</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_wishlist_i.svg" alt=""></span>My Wishlist <em>4</em></a></li>
+                                        <!-- <li><a href="#"><span class="text"><img src="images/past_purches_i.svg" alt=""></span>Past Purchases</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_shipping_addresses_i.svg" alt=""></span>My Shipping Addresses</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_billing_addresses_i.svg" alt=""></span>My Billing Addresses</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_profile_i.svg" alt=""></span>My Profile</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/log_out_i.svg" alt=""></span>Log out</a></li> -->
+                                   </ul>
+                                   <ul class="nav">
+                                        <li><a href="#">Consult with LPI Expert</a></li>
+                                        <li><a href="#">Support center</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="cart_bag">
+                              <img src="images/cart_bag.svg" alt="">    
+                              <strong>Cart</strong>
+                              <span>0</span>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="bottom_header">
+               <div class="mobile_header">
+                    <div class="icon_title">
+                         <span><img src="images/recent_product_highlights_icon.svg" alt=""></span>
+                         <h2>Shop LPI Fire</h2>
+                    </div>
+                    <div class="back">
+                         <img src="images/arrow_s.svg" alt="">
+                    </div>
+               </div>
+               <div class="wrapper">
+                    <ul class="navigation d_flex d_flex_ac d_flex_jc">
+                         <li class="drop_menu">
+                              <a href="#">Fire Extinguishers & Chemicals</a>
+                              <div class="mega_menu">
+                                   <a href="#" class="white_btn">Shop all <span></span></a>
+                                   <div class="icon_title">
+                                        <span><img src="images/fire_extinguishers_chemicals_icon.svg" alt=""></span>
+                                        <h2>Fire Extinguishers & Chemicals</h2>
+                                   </div>
+                                   <div class="inner d_flex">
+                                        <div class="category_product d_flex">
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img1.png" alt=""></div>
+                                                  <span class="text">Dry Chemical Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img2.png" alt=""></div>
+                                                  <span class="text">Wet Chemical Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img3.png" alt=""></div>
+                                                  <span class="text">Water-Based Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img4.png" alt=""></div>
+                                                  <span class="text">Foam Extinguishers (AFFF)</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img5.png" alt=""></div>
+                                                  <span class="text">CO2 Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img6.png" alt=""></div>
+                                                  <span class="text">Halotron Extinguishers</span>
+                                             </a>
+                                        </div>
+                                        <div class="category_menu">
+                                             <h4>Chemicals</h4>
+                                             <div class="wrap">
+                                                  <ul>
+                                                       <li><a href="#">Ansulex Low PH Wet Chemical Agent</a></li>
+                                                       <li><a href="#">Pyro-Chem Wet Chemical Recharge</a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li>
+                         <li class="drop_menu">
+                              <a href="#">Extinguisher Parts</a>
+                              <div class="mega_menu open">
+                                   <a href="#" class="white_btn">Shop all <span></span></a>
+                                   <div class="icon_title">
+                                        <span><img src="images/extinguisher_parts_icon.svg" alt=""></span>
+                                        <h2>Extinguisher Parts</h2>
+                                   </div>
+                                   <div class="inner d_flex">
+                                        <div class="category_product d_flex">
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img1.png" alt=""></div>
+                                                  <span class="text">Valve Stems</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img2.png" alt=""></div>
+                                                  <span class="text">Gauges</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img3.png" alt=""></div>
+                                                  <span class="text">Wall Hooks & Hangers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img4.png" alt=""></div>
+                                                  <span class="text">O-Rings</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img5.png" alt=""></div>
+                                                  <span class="text">Pull Pins</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img6.png" alt=""></div>
+                                                  <span class="text">Fasteners</span>
+                                             </a>
+                                        </div>
+                                        <div class="category_menu">
+                                             <h4>More categories</h4>
+                                             <div class="wrap">
+                                                  <ul>
+                                                       <li><a href="#">Hose Straps & Hose Clips</a></li>
+                                                       <li><a href="#">CO2 Hoses</a></li>
+                                                       <li><a href="#">Ansul OEM Portables</a></li>
+                                                       <li><a href="#">Amerex OEM Portables</a></li>
+                                                       <li><a href="#">Buckeye OEM Portables</a></li>
+                                                       <li><a href="#">Badger OEM Portables</a></li>
+                                                  </ul>
+                                                  <ul>
+                                                       <li><a href="#">UL Listed Sprinkler System Gauges</a></li>
+                                                       <li><a href="#">Tamper Seals</a></li>
+                                                       <li><a href="#">Brushes</a></li>
+                                                       <li><a href="#">Industrial Cleaner</a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li>
+                         <li><a href="#">Cabinets & Covers</a></li>
+                         <li><a href="#">Exit & Emergency Lighting </a></li>
+                         <li><a href="#">Signs, Labels, & Tags</a></li>
+                         <li><a href="#">Brackets</a></li>
+                         <li><a href="#">System Parts</a></li>
+                         <li><a href="#">First Aid</a></li>
+                         <li><a href="#">Sprinkler Parts</a></li>
+                         <li><a href="#">Pipes and Fittings</a></li>
+                         <li><a href="#">Stands</a></li>
+                    </ul>
+               </div>
+          </div>
+     </header>
+    <section class="inner_banner">
+          <div class="bg" style="background-image: url(./images/category_ban_bg.jpg);"></div>
+          <div class="col">
+               <h1>Fire Extinguishers & Chemicals</h1>
+               <p>Reliable Fire Suppression Solutions for Commercial & Industrial Use</p>
+          </div>
+    </section>
+    <section class="breadcrumb_sec d_flex d_flex_ac d_flex_jb">
+          <ul class="breadcrumb d_flex d_flex_ac">
+              <li><a href="#"><img src="images/home_brad_i1.svg" alt=""> Home</a></li>
+              <li><a href="#"><img src="images/cyclender_brad_i1.svg" alt=""> Fire extinguishers & Chemicals</a></li>
+              <li><p>Dry Chemical Fire Extinguishers</p></li>
+          </ul>  
+          <ul class="links d_flex">
+               <li><a href="#"><img src="images/order_form.svg" alt=""> Order Form Text </a></li>
+               <li><a href="#"><img src="images/talk_expert.svg" alt=""> Talk to an expert! <span class="text">(201) 343-3330</span> </a></li>
+          </ul>              
+     </section>
+     <section class="filter_sec d_flex">
+          <div class="filter_sidebar">
+               <div class="icon_title">
+                    <span><img src="images/filter_icon.svg" alt=""></span>
+                    <h2>Filter by</h2>
+               </div>
+               <div class="search_col">
+                    <form>
+                         <input type="text" class="in" placeholder="Search category">
+                         <input type="submit" class="sub">
+                    </form>
+               </div>
+               <div class="colin list_filter_price">
+                    <div class="title d_flex d_flex_ac">
+                         <img src="images/mobile_arrow.png" alt="">
+                        <h3>Filter by price</h3>
+                    </div>
+                    <div class="text">
+                         <div class="range-wrapper">
+                              <div id="price-slider"></div>
+                              <div class="price-labels">
+                                   <span>Min $49</span>
+                                   <span>$1,449</span>
+                              </div>
+                              <div class="price-inputs">
+                                   <input type="text" id="min-price" value="$49">
+                                   <span>–</span>
+                                   <input type="text" id="max-price" value="$1,035">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="colin list_product_category">
+                    <div class="title d_flex d_flex_ac">
+                         <img src="images/mobile_arrow.png" alt="">
+                        <h3>Product Category</h3>
+                    </div>
+                    <div class="text">
+                         
+                    </div>
+               </div>
+               <div class="colin list_product_type">
+                    <div class="title d_flex d_flex_ac">
+                         <img src="images/mobile_arrow.png" alt="">
+                        <h3>Product Type</h3>
+                    </div>
+                    <div class="text">
+                         <label>
+                              <input type="checkbox" >
+                              <span>Extinguishers</span>
+                              <em>19</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>Chemical Agents</span>
+                              <em>2</em>
+                         </label>
+                    </div>
+               </div>
+               <div class="colin list_filter_capacity_size">
+                    <div class="title d_flex d_flex_ac">
+                         <img src="images/mobile_arrow.png" alt="">
+                        <h3>Capacity/Size</h3>
+                    </div>
+                    <div class="text">
+                         <label>
+                              <input type="checkbox" >
+                              <span>2.5 lb</span>
+                              <em>5</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>5 lb</span>
+                              <em>2</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>6 Liter</span>
+                              <em>2</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>10 lb</span>
+                              <em>2</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>20 lb</span>
+                              <em>4</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>2.5 Gallon</span>
+                              <em>4</em>
+                         </label>
+                          <label>
+                              <input type="checkbox" >
+                              <span>11 lb</span>
+                              <em>2</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>15 lb</span>
+                              <em>4</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>15.5 lb</span>
+                              <em>4</em>
+                         </label>
+                         
+                    </div>
+               </div>
+               <div class="colin list_installation">
+                    <div class="title d_flex d_flex_ac">
+                         <img src="images/mobile_arrow.png" alt="">
+                        <h3>Installation/Usage</h3>
+                    </div>
+                    <div class="text">
+                          <label>
+                              <input type="checkbox" >
+                              <span>Wall-Mounted</span>
+                              <em>15</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>Pyro-Chem-Mounted</span>
+                              <em>3</em>
+                         </label>
+                    </div>
+               </div>
+               <div class="colin list_brand">
+                    <div class="title d_flex d_flex_ac">
+                         <img src="images/mobile_arrow.png" alt="">
+                        <h3>Brand/Manufacturer</h3>
+                    </div>
+                    <div class="text">
+                          <label>
+                              <input type="checkbox" >
+                              <span>Buckeye</span>
+                              <em>19</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>Ansulex</span>
+                              <em>3</em>
+                         </label>
+                         <label>
+                              <input type="checkbox" >
+                              <span>Pyro-Chem</span>
+                              <em>3</em>
+                         </label>
+                    </div>
+               </div>
+
+          </div>
+          <div class="filter_containt">
+               <div class="title_link d_flex d_flex_ac">
+                    <a href="#" class="btn" ><img src="images/arrow_s.svg" alt="arrow_s"></a>
+                    <h2>Dry Chemical Fire Extinguishers</h2>
+               </div>
+               <div class="categories_results_title d_flex d_flex_ac d_flex_jb">
+                    <div class="icon_title">
+                         <span><img src="images/cyclender_brad_w.svg" alt=""></span>
+                         <h2><strong>29</strong> results</h2>
+                    </div>
+                    <div class="right_col">
+                         <div class="result_dropdown">
+                              <div class="result_dropdown_title"><span><img src="images/p_high_low.svg" alt=""></span><em>Price: High to Low</em></div>
+                              <ul>
+                                   <li><span><img src="images/p_feature.svg" alt=""></span><em>Featured</em></li>
+                                   <li><span><img src="images/p_low_high.svg" alt=""></span><em>Price: Low to High</em></li>
+                                   <li><span><img src="images/p_high_low.svg" alt=""></span><em>Price: High to Low</em></li>
+                                   <li><span><img src="images/p_a_z.svg" alt=""></span><em>A-Z</em></li>
+                                   <li><span><img src="images/p_z_a.svg" alt=""></span><em>Z-A</em></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <div class="categories_results_list d_flex ">
+                     <div class="colin">    
+                         <div class="sale"> Sale! </div>                       
+                         <div class="wishlist">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                   <path d="M9.51744 1.31698L11.8969 6.03106L16.4766 6.48476C16.5856 6.49382 16.6897 6.53393 16.7767 6.60035C16.8636 6.66676 16.9297 6.75669 16.9671 6.8595C17.0045 6.9623 17.0117 7.07367 16.9878 7.18043C16.9638 7.28718 16.9098 7.38485 16.8321 7.46186L13.0631 11.1974L14.4605 16.2735C14.4891 16.3811 14.486 16.4948 14.4515 16.6007C14.4171 16.7066 14.3527 16.8004 14.2663 16.8706C14.1798 16.9408 14.0749 16.9846 13.9641 16.9966C13.8534 17.0086 13.7415 16.9884 13.642 16.9384L8.99903 14.6393L4.36246 16.9355C4.26294 16.9856 4.15107 17.0058 4.04033 16.9938C3.92958 16.9818 3.82467 16.938 3.7382 16.8678C3.65174 16.7975 3.58741 16.7038 3.55294 16.5979C3.51848 16.4919 3.51536 16.3783 3.54395 16.2706L4.94132 11.1946L1.16949 7.45901C1.09178 7.382 1.03777 7.28434 1.01385 7.17758C0.989931 7.07083 0.997101 6.95946 1.03451 6.85665C1.07192 6.75385 1.13801 6.66391 1.22494 6.5975C1.31188 6.53109 1.41603 6.49098 1.52505 6.48192L6.10473 6.02822L8.48061 1.31698C8.52948 1.22155 8.60374 1.14145 8.69521 1.08552C8.78668 1.0296 8.89181 1 8.99903 1C9.10624 1 9.21138 1.0296 9.30285 1.08552C9.39432 1.14145 9.46858 1.22155 9.51744 1.31698Z" stroke="#B0BEC5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              <div class="tooltip">Add To Wishlist</div>
+                         </div>
+                         <div class="img"><img src="images/cat_cyclinder1.png" alt=""></div>
+                         <div class="text">
+                              <div class="category_count"> <span>Extinguishers</span><img src="images/polygon_i.png" alt=""><span>Dry Chemical Extinguishers </span> </div>
+                              <a href="#" class="link">Buckeye 2.5 lb Fire Extinguisher with Vehicle Bracket</a>                              
+                              <h5><img src="images/tag.png" alt="">LPI-CCHS</h5>
+                         </div>
+                         <div class="bottom_price d_flex d_flex_jb">
+                              <div class="left_p d_flex d_flex_jb">
+                                   <p class="price"> <span class="amount"> <bdi><span class="Symbol">$</span>49.99</bdi> </span> </p>
+                                   <p class="unit"> /unit </p>
+                                   <p><del><span class="amount"><bdi><span class="Symbol">$</span>69.99</bdi></span></del></p>
+                              </div>
+                              <a href="#" class="white_btn"><img src="images/pluce.svg" alt=""></a>
+                         </div>
+                         <div class="btn_col d_flex d_flex_ac d_flex_jb">
+                              <div class="quantity">
+                                    <div class="counter">
+                                         <button class="decrement"><img src="images/decrement.svg" alt=""></button>
+                                         <input type="number" class="input-text qty " value="1" min="1" max="20" step="1" inputmode="numeric" autocomplete="off">
+                                         <button class="increment"><img src="images/increment.svg" alt=""></button>
+                                    </div>
+                              </div>
+                              <a href="#" class="orange_btn">Add to cart</a>
+                         </div>
+                    </div>
+                    <div class="colin">    
+                         <div class="wishlist">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                   <path d="M9.51744 1.31698L11.8969 6.03106L16.4766 6.48476C16.5856 6.49382 16.6897 6.53393 16.7767 6.60035C16.8636 6.66676 16.9297 6.75669 16.9671 6.8595C17.0045 6.9623 17.0117 7.07367 16.9878 7.18043C16.9638 7.28718 16.9098 7.38485 16.8321 7.46186L13.0631 11.1974L14.4605 16.2735C14.4891 16.3811 14.486 16.4948 14.4515 16.6007C14.4171 16.7066 14.3527 16.8004 14.2663 16.8706C14.1798 16.9408 14.0749 16.9846 13.9641 16.9966C13.8534 17.0086 13.7415 16.9884 13.642 16.9384L8.99903 14.6393L4.36246 16.9355C4.26294 16.9856 4.15107 17.0058 4.04033 16.9938C3.92958 16.9818 3.82467 16.938 3.7382 16.8678C3.65174 16.7975 3.58741 16.7038 3.55294 16.5979C3.51848 16.4919 3.51536 16.3783 3.54395 16.2706L4.94132 11.1946L1.16949 7.45901C1.09178 7.382 1.03777 7.28434 1.01385 7.17758C0.989931 7.07083 0.997101 6.95946 1.03451 6.85665C1.07192 6.75385 1.13801 6.66391 1.22494 6.5975C1.31188 6.53109 1.41603 6.49098 1.52505 6.48192L6.10473 6.02822L8.48061 1.31698C8.52948 1.22155 8.60374 1.14145 8.69521 1.08552C8.78668 1.0296 8.89181 1 8.99903 1C9.10624 1 9.21138 1.0296 9.30285 1.08552C9.39432 1.14145 9.46858 1.22155 9.51744 1.31698Z" stroke="#B0BEC5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              <div class="tooltip">Add To Wishlist</div>
+                         </div>
+                         <div class="img"><img src="images/cat_cyclinder2.png" alt=""></div>
+                         <div class="text">
+                              <div class="category_count"> <span>Extinguishers</span><img src="images/polygon_i.png" alt=""><span>Dry Chemical Extinguishers </span> </div>
+                              <a href="#" class="link">Buckeye 5 lb Fire Extinguisher with Wall Hook</a>                              
+                              <h5><img src="images/tag.png" alt="">LPI-CCHS</h5>
+                         </div>
+                         <div class="bottom_price d_flex d_flex_jb">
+                              <div class="left_p d_flex d_flex_jb">
+                                   <p class="price"> <span class="amount"> <bdi><span class="Symbol">$</span>49.99</bdi> </span> </p>
+                                   <p class="unit"> /unit </p>
+                              </div>
+                              <a href="#" class="white_btn"><img src="images/pluce.svg" alt=""></a>
+                         </div>
+                         <div class="btn_col d_flex d_flex_ac d_flex_jb">
+                              <div class="quantity">
+                                    <div class="counter">
+                                         <button class="decrement"><img src="images/decrement.svg" alt=""></button>
+                                         <input type="number" class="input-text qty " value="1" min="1" max="20" step="1" inputmode="numeric" autocomplete="off">
+                                         <button class="increment"><img src="images/increment.svg" alt=""></button>
+                                    </div>
+                              </div>
+                              <a href="#" class="orange_btn">Add to cart</a>
+                         </div>
+                    </div>
+                    <div class="colin">    
+                         <div class="wishlist">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                   <path d="M9.51744 1.31698L11.8969 6.03106L16.4766 6.48476C16.5856 6.49382 16.6897 6.53393 16.7767 6.60035C16.8636 6.66676 16.9297 6.75669 16.9671 6.8595C17.0045 6.9623 17.0117 7.07367 16.9878 7.18043C16.9638 7.28718 16.9098 7.38485 16.8321 7.46186L13.0631 11.1974L14.4605 16.2735C14.4891 16.3811 14.486 16.4948 14.4515 16.6007C14.4171 16.7066 14.3527 16.8004 14.2663 16.8706C14.1798 16.9408 14.0749 16.9846 13.9641 16.9966C13.8534 17.0086 13.7415 16.9884 13.642 16.9384L8.99903 14.6393L4.36246 16.9355C4.26294 16.9856 4.15107 17.0058 4.04033 16.9938C3.92958 16.9818 3.82467 16.938 3.7382 16.8678C3.65174 16.7975 3.58741 16.7038 3.55294 16.5979C3.51848 16.4919 3.51536 16.3783 3.54395 16.2706L4.94132 11.1946L1.16949 7.45901C1.09178 7.382 1.03777 7.28434 1.01385 7.17758C0.989931 7.07083 0.997101 6.95946 1.03451 6.85665C1.07192 6.75385 1.13801 6.66391 1.22494 6.5975C1.31188 6.53109 1.41603 6.49098 1.52505 6.48192L6.10473 6.02822L8.48061 1.31698C8.52948 1.22155 8.60374 1.14145 8.69521 1.08552C8.78668 1.0296 8.89181 1 8.99903 1C9.10624 1 9.21138 1.0296 9.30285 1.08552C9.39432 1.14145 9.46858 1.22155 9.51744 1.31698Z" stroke="#B0BEC5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              <div class="tooltip">Add To Wishlist</div>
+                         </div>
+                         <div class="img"><img src="images/cat_cyclinder2.png" alt=""></div>
+                         <div class="text">
+                              <div class="category_count"> <span>Extinguishers</span><img src="images/polygon_i.png" alt=""><span>Dry Chemical Extinguishers </span> </div>
+                              <a href="#" class="link">Buckeye 5 lb Fire Extinguisher with Wall Hook</a>                              
+                              <h5><img src="images/tag.png" alt="">LPI-CCHS</h5>
+                         </div>
+                         <div class="bottom_price d_flex d_flex_jb">
+                              <div class="left_p d_flex d_flex_jb">
+                                   <p class="price"> <span class="amount"> <bdi><span class="Symbol">$</span>49.99</bdi> </span> </p>
+                                   <p class="unit"> /unit </p>
+                              </div>
+                              <a href="#" class="white_btn"><img src="images/pluce.svg" alt=""></a>
+                         </div>
+                         <div class="btn_col d_flex d_flex_ac d_flex_jb">
+                              <div class="quantity">
+                                    <div class="counter">
+                                         <button class="decrement"><img src="images/decrement.svg" alt=""></button>
+                                         <input type="number" class="input-text qty " value="1" min="1" max="20" step="1" inputmode="numeric" autocomplete="off">
+                                         <button class="increment"><img src="images/increment.svg" alt=""></button>
+                                    </div>
+                              </div>
+                              <a href="#" class="orange_btn">Add to cart</a>
+                         </div>
+                    </div>
+                    <div class="colin">    
+                         <div class="wishlist">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                   <path d="M9.51744 1.31698L11.8969 6.03106L16.4766 6.48476C16.5856 6.49382 16.6897 6.53393 16.7767 6.60035C16.8636 6.66676 16.9297 6.75669 16.9671 6.8595C17.0045 6.9623 17.0117 7.07367 16.9878 7.18043C16.9638 7.28718 16.9098 7.38485 16.8321 7.46186L13.0631 11.1974L14.4605 16.2735C14.4891 16.3811 14.486 16.4948 14.4515 16.6007C14.4171 16.7066 14.3527 16.8004 14.2663 16.8706C14.1798 16.9408 14.0749 16.9846 13.9641 16.9966C13.8534 17.0086 13.7415 16.9884 13.642 16.9384L8.99903 14.6393L4.36246 16.9355C4.26294 16.9856 4.15107 17.0058 4.04033 16.9938C3.92958 16.9818 3.82467 16.938 3.7382 16.8678C3.65174 16.7975 3.58741 16.7038 3.55294 16.5979C3.51848 16.4919 3.51536 16.3783 3.54395 16.2706L4.94132 11.1946L1.16949 7.45901C1.09178 7.382 1.03777 7.28434 1.01385 7.17758C0.989931 7.07083 0.997101 6.95946 1.03451 6.85665C1.07192 6.75385 1.13801 6.66391 1.22494 6.5975C1.31188 6.53109 1.41603 6.49098 1.52505 6.48192L6.10473 6.02822L8.48061 1.31698C8.52948 1.22155 8.60374 1.14145 8.69521 1.08552C8.78668 1.0296 8.89181 1 8.99903 1C9.10624 1 9.21138 1.0296 9.30285 1.08552C9.39432 1.14145 9.46858 1.22155 9.51744 1.31698Z" stroke="#B0BEC5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              <div class="tooltip">Add To Wishlist</div>
+                         </div>
+                         <div class="img"><img src="images/cat_cyclinder2.png" alt=""></div>
+                         <div class="text">
+                              <div class="category_count"> <span>Extinguishers</span><img src="images/polygon_i.png" alt=""><span>Dry Chemical Extinguishers </span> </div>
+                              <a href="#" class="link">Buckeye 10 lb Fire Extinguisher with Wall Hook</a>                              
+                              <h5><img src="images/tag.png" alt="">LPI-CCHS</h5>
+                         </div>
+                         <div class="bottom_price d_flex d_flex_jb">
+                              <div class="left_p d_flex d_flex_jb">
+                                   <p class="price"> <span class="amount"> <bdi><span class="Symbol">$</span>49.99</bdi> </span> </p>
+                                   <p class="unit"> /unit </p>
+                              </div>
+                              <a href="#" class="white_btn"><img src="images/pluce.svg" alt=""></a>
+                         </div>
+                         <div class="btn_col d_flex d_flex_ac d_flex_jb">
+                              <div class="quantity">
+                                    <div class="counter">
+                                         <button class="decrement"><img src="images/decrement.svg" alt=""></button>
+                                         <input type="number" class="input-text qty " value="1" min="1" max="20" step="1" inputmode="numeric" autocomplete="off">
+                                         <button class="increment"><img src="images/increment.svg" alt=""></button>
+                                    </div>
+                              </div>
+                              <a href="#" class="orange_btn">Add to cart</a>
+                         </div>
+                    </div>
+                    <div class="colin">    
+                         <div class="wishlist">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                   <path d="M9.51744 1.31698L11.8969 6.03106L16.4766 6.48476C16.5856 6.49382 16.6897 6.53393 16.7767 6.60035C16.8636 6.66676 16.9297 6.75669 16.9671 6.8595C17.0045 6.9623 17.0117 7.07367 16.9878 7.18043C16.9638 7.28718 16.9098 7.38485 16.8321 7.46186L13.0631 11.1974L14.4605 16.2735C14.4891 16.3811 14.486 16.4948 14.4515 16.6007C14.4171 16.7066 14.3527 16.8004 14.2663 16.8706C14.1798 16.9408 14.0749 16.9846 13.9641 16.9966C13.8534 17.0086 13.7415 16.9884 13.642 16.9384L8.99903 14.6393L4.36246 16.9355C4.26294 16.9856 4.15107 17.0058 4.04033 16.9938C3.92958 16.9818 3.82467 16.938 3.7382 16.8678C3.65174 16.7975 3.58741 16.7038 3.55294 16.5979C3.51848 16.4919 3.51536 16.3783 3.54395 16.2706L4.94132 11.1946L1.16949 7.45901C1.09178 7.382 1.03777 7.28434 1.01385 7.17758C0.989931 7.07083 0.997101 6.95946 1.03451 6.85665C1.07192 6.75385 1.13801 6.66391 1.22494 6.5975C1.31188 6.53109 1.41603 6.49098 1.52505 6.48192L6.10473 6.02822L8.48061 1.31698C8.52948 1.22155 8.60374 1.14145 8.69521 1.08552C8.78668 1.0296 8.89181 1 8.99903 1C9.10624 1 9.21138 1.0296 9.30285 1.08552C9.39432 1.14145 9.46858 1.22155 9.51744 1.31698Z" stroke="#B0BEC5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              <div class="tooltip">Add To Wishlist</div>
+                         </div>
+                         <div class="img"><img src="images/cat_cyclinder4.png" alt=""></div>
+                         <div class="text">
+                              <div class="category_count"> <span>Extinguishers</span><img src="images/polygon_i.png" alt=""><span>Dry Chemical Extinguishers </span> </div>
+                              <a href="#" class="link">Buckeye 20 lb Fire Extinguisher with Wall Hook</a>                              
+                              <h5><img src="images/tag.png" alt="">LPI-CCHS</h5>
+                         </div>
+                         <div class="bottom_price d_flex d_flex_jb">
+                              <div class="left_p d_flex d_flex_jb">
+                                   <p class="price"> <span class="amount"> <bdi><span class="Symbol">$</span>49.99</bdi> </span> </p>
+                                   <p class="unit"> /unit </p>
+                              </div>
+                              <a href="#" class="white_btn"><img src="images/pluce.svg" alt=""></a>
+                         </div>
+                         <div class="btn_col d_flex d_flex_ac d_flex_jb">
+                              <div class="quantity">
+                                    <div class="counter">
+                                         <button class="decrement"><img src="images/decrement.svg" alt=""></button>
+                                         <input type="number" class="input-text qty " value="1" min="1" max="20" step="1" inputmode="numeric" autocomplete="off">
+                                         <button class="increment"><img src="images/increment.svg" alt=""></button>
+                                    </div>
+                              </div>
+                              <a href="#" class="orange_btn">Add to cart</a>
+                         </div>
+                    </div>
+               </div>
+
+
+          </div>
+     </section>
+     <section class="product_categories product_categories_slider">
+          <div class="title wrapper">
+               <h2>shop other categories</h2>
+          </div>
+          <div class="wrap">
+               <div class="swiper swiper-container">
+                    <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat1.png" alt="">
+                                             </div>
+                                             <h4>Fire Extinguishers & Chemicals</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat2.png" alt="">
+                                             </div>
+                                             <h4>Extinguisher Parts</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat3.png" alt="">
+                                             </div>
+                                             <h4>Cabinets, Accessories & Covers</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat4.png" alt="">
+                                             </div>
+                                             <h4>Exit & Emergency Lighting</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat5.png" alt="">
+                                             </div>
+                                             <h4>Signs, Labels & Tags</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat6.png" alt="">
+                                             </div>
+                                             <h4>Brackets</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat7.png" alt="">
+                                             </div>
+                                             <h4>System Parts</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat8.png" alt="">
+                                             </div>
+                                             <h4>First Aid Kits & Safety</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat9.png" alt="">
+                                             </div>
+                                             <h4>Sprinkler Parts</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat10.png" alt="">
+                                             </div>
+                                             <h4>Pipes and Fittings</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="product_item">                           
+                                        <div class="text">
+                                             <div class="img">
+                                                  <img src="images/cat11.png" alt="">
+                                             </div>
+                                             <h4>Stands</h4>
+                                        </div>
+                                        <div class="bottom">
+                                             <a href="#" class="link">Explore products <span></span></a>
+                                        </div>
+                                   </div>                        
+                              </div>                                                  
+                    </div>
+                   
+               </div>
+                <div class="swiper_nav">
+                         <div class="swiper-button-next"><img src="images/arrow_s_black.svg" alt="arrow_s_black"></div>
+                         <div class="swiper-button-prev"><img src="images/arrow_s_black.svg" alt="arrow_s_black"></div>
+                    </div>
+          </div>
+     </section>
+          
+     <section class="shipping_locations shipping_locations_expert">    
+          <div class="wrapper">
+               <div class="left_col">
+                    <div class="col">
+                         <h2>Nationwide Shipping from 3 Strategic Locations</h2>
+                         <p>Fast, reliable delivery to meet your fire safety needs wherever you are!</p>
+                         <ul class="d_flex d_flex_ac">
+                              <li>California</li>
+                              <li>Texas</li>
+                              <li>New Jersey</li>
+                         </ul>
+                         <a href="#" class="white_btn">Locations <span></span></a>
+                    </div>
+                    <div class="map"><img src="images/map.png" alt=""></div>
+               </div>
+               <div class="right_col">
+                    <div class="talk_expert">
+                         <div class="text">
+                              <h3>Your Needs,<br>Our Expertise</h3>
+                              <p>Custom Fire Safety<br> Equipment Built<br>Just for You</p>
+                         </div>
+                         <img src="images/expert_man.png" class="expert_man" alt="">
+                         <div class="bottom_text">
+                              <a href="#" class="white_btn">Talk to an expert <span></span></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+ 
+     <!-- footer start -->
+     <footer>
+          <div class="top_footer">
+               <div class="wrapper">
+                    <a href="index.html" class="footer_logo"><img src="images/brand.svg" alt=""></a>
+                    <div class="inner d_flex ">
+                         <div class="left_col">
+                              <div class="colin">
+                                   <h3><a href="#">Shop</a></h3>
+                                   <ul>
+                                        <li><a href="#">Fire Extinguishers & Chemicals</a></li>
+                                        <li><a href="#">System Parts</a></li>
+                                        <li><a href="#">Extinguisher Parts</a></li>
+                                        <li><a href="#">First Aid Kits & Safety</a></li>
+                                        <li><a href="#">Cabinets, Accessories, & Covers</a></li>
+                                        <li><a href="#">Sprinkler Parts</a></li>
+                                        <li><a href="#">Exit & Emergency Lighting </a></li>
+                                        <li><a href="#">Pipes and Fittings</a></li>
+                                        <li><a href="#">Signs, Labels, & Tags</a></li>
+                                        <li><a href="#">Stands</a></li>
+                                        <li><a href="#">Brackets</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Company</a></h3>
+                                   <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Our Mission</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Custom Orders</a></h3>
+                                   <ul>
+                                        <li><a href="#">Consult Our Experts</a></li>
+                                        <li><a href="#">Custom Solutions</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Contact us</a></h3>
+                                   <ul>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#">Locations</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Support</a></h3>
+                                   <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="right_col">
+                              <div class="colin">
+                                   <h3>HQ</h3>
+                                   <div class="col">
+                                        <span><img src="images/f_tell.svg" alt=""></span>
+                                        <a href="#">(201) 343-3330</a>
+                                   </div>
+                                   <div class="col">
+                                        <span><img src="images/f_email.svg" alt=""></span>
+                                        <a href="#">info@lpifire.com</a>
+                                   </div>                                  
+                                   <div class="col">
+                                        <span><img src="images/f_map.svg" alt=""></span>
+                                        <p><strong>LPI Fire</strong><br>
+                                             421 N. Midland Avenue, 
+                                             Saddle Brook, NJ 07663
+                                        </p>
+                                   </div>
+                                   <div class="col">
+                                        <p><strong>Warehouses:</strong></p>
+                                        <ul>
+                                             <li>Vista, CA</li>
+                                             <li>Arlington, TX</li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="safe_secure">
+                         <div class="left_ss">
+                              <img src="images/dss.png" alt="">
+                              <p>Safe and secure checkout</p>
+                         </div>
+                         <div class="right_ss">
+                              <p>We accept</p>
+                              <ul>
+                                   <li><img src="images/AMEX.png" alt=""></li>
+                                   <li><img src="images/visa-logo.png" alt=""></li>
+                                   <li><img src="images/PayPal.png" alt=""></li>
+                                   <li><img src="images/Mastercard.png" alt=""></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="bttom_footer">
+               <div class="wrapper d_flex d_flex_ac d_flex_jb">
+                    <ul class="d_flex d_flex_ac">
+                         <li>© 2025 LPI Fire</li>
+                         <li>Rights reserved</li>
+                    </ul>
+                    <p>* All images, product descriptions, and information on this website are for reference only and may be subject to change without notice. LPI Fire is not responsible for errors, omissions, or third-party content.</p>
+               </div>
+          </div>
+     </footer>
+     <!-- footer end -->
+     <!-- <a href="#" class="sticky_whatsapp"><img src="images/whatsapp.svg" alt=""></a> -->
+     <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+     <script src="js/jquery.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+     <script src="js/lenis.js"></script>
+     <script src="js/swiper.min.js"></script>
+     <script src="js/script.js"></script>
+</body>
+</html>

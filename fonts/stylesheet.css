@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-Bold.woff2') format('woff2'),
+        url('HostGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-SemiBoldItalic.woff2') format('woff2'),
+        url('SofiaSansCondensed-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-ThinItalic.woff2') format('woff2'),
+        url('SofiaSansCondensed-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-ExtraBold.woff2') format('woff2'),
+        url('HostGrotesk-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-SemiBold.woff2') format('woff2'),
+        url('SofiaSansCondensed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-Italic.woff2') format('woff2'),
+        url('HostGrotesk-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-Light.woff2') format('woff2'),
+        url('HostGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-BoldItalic.woff2') format('woff2'),
+        url('HostGrotesk-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-Medium.woff2') format('woff2'),
+        url('HostGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-MediumItalic.woff2') format('woff2'),
+        url('HostGrotesk-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-MediumItalic.woff2') format('woff2'),
+        url('SofiaSansCondensed-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-Regular.woff2') format('woff2'),
+        url('SofiaSansCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-ExtraBoldItalic.woff2') format('woff2'),
+        url('HostGrotesk-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-LightItalic.woff2') format('woff2'),
+        url('HostGrotesk-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-ExtraBold.woff2') format('woff2'),
+        url('SofiaSansCondensed-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-SemiBoldItalic.woff2') format('woff2'),
+        url('HostGrotesk-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-BoldItalic.woff2') format('woff2'),
+        url('SofiaSansCondensed-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-BlackItalic.woff2') format('woff2'),
+        url('SofiaSansCondensed-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-Bold.woff2') format('woff2'),
+        url('SofiaSansCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-Thin.woff2') format('woff2'),
+        url('SofiaSansCondensed-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-SemiBold.woff2') format('woff2'),
+        url('HostGrotesk-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Host Grotesk';
+    src: url('HostGrotesk-Regular.woff2') format('woff2'),
+        url('HostGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-Black.woff2') format('woff2'),
+        url('SofiaSansCondensed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-ExtraLightItalic.woff2') format('woff2'),
+        url('SofiaSansCondensed-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-Medium.woff2') format('woff2'),
+        url('SofiaSansCondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-ExtraBoldItalic.woff2') format('woff2'),
+        url('SofiaSansCondensed-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-Light.woff2') format('woff2'),
+        url('SofiaSansCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-Italic.woff2') format('woff2'),
+        url('SofiaSansCondensed-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-ExtraLight.woff2') format('woff2'),
+        url('SofiaSansCondensed-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Condensed';
+    src: url('SofiaSansCondensed-LightItalic.woff2') format('woff2'),
+        url('SofiaSansCondensed-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
