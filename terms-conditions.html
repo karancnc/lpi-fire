@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>LPI-fire</title>
+     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+     <link rel="stylesheet" href="css/swiper.min.css" />
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+     <link rel="stylesheet" href="fonts/stylesheet.css">
+     <link rel="stylesheet" href="css/screen.css">
+     <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+     <!-- cart sidebar start -->
+     <div class="overlay"></div>
+     <div class="mini_cart">
+          <div class="mini_cart_header">
+               <div class="inner d_flex d_flex_ac d_flex_jb">
+                    <div class="icon_title">
+                         <span><img src="images/my_shopping_cart_icon.svg" alt=""></span>
+                         <h2>My <em>Shopping</em> cart</h2>
+                    </div>
+                    <div class="right_m d_flex d_flex_ac">
+                         <a href="#" class="white_btn">View cart <span></span></a>
+                         <span class="cart_close"><img src="images/cart_close.svg" alt=""></span>
+                    </div>
+               </div>
+               <div class="minimum_cart_note">
+                  <img src="images/mini_cart_red_icon.svg" alt="">  Minimum Cart - <strong>$50</strong>
+               </div>
+          </div>
+          <!-- cart empty -->
+          <!-- <div class="mini_cart_empty">
+               <img src="images/mini_cart_empty.svg" alt="">
+               <h4>No items in your cart</h4>
+               <p>Items you will add to your cart will appear here.</p>
+          </div> -->
+          <div class="mini_cart_content">
+               <div class="mini_cart_list">
+                    <ul class="mini_cart_item">
+                         <li>
+                              <a href="#"> <img src="images/cart_item1.jpg" alt=""> </a>
+                         </li>
+                         <li>
+                              <a href="#" class="link">Buckeye 2.5lb Fire Extinguisher with Vehicle Bracket</a>
+                              <h4><img src="images/tag.png" alt=""> Part Number: LPI-CCHS</h4>
+                              <h5>$49.99 price per unit</h5>
+                              <p class="price"> 
+                                   <span class="amount"><bdi><span class="symbol">$</span>49.99</bdi></span>                                
+                              </p>                              
+                         </li>
+                         <li>
+                              <div class="edit_delete_btn">
+                                   <a href="#" class="mini_edit">
+                                        <img src="images/edit_i.svg" alt="">
+                                        <div class="tooltip"> Edit fields</div>
+                                   </a>
+                                   <a href="#" class="mini_delete">
+                                        <img src="images/delete_i.svg" alt="">
+                                        <div class="tooltip"> Remove item </div>
+                                   </a>
+                              </div>
+                              <div class="quantity">
+                                    <div class="counter">
+                                         <button class="decrement"><img src="images/decrement.svg" alt=""></button>
+                                         <input type="number" class="input-text qty text" value="1" min="1" max="20" step="1" inputmode="numeric" autocomplete="off">
+                                         <button class="increment"><img src="images/increment.svg" alt=""></button>
+                                    </div>
+                              </div>
+                         </li>
+                    </ul>
+                    
+               </div>
+          </div>
+
+
+          <div class="mini_cart_bottom">
+              <div class="total d_flex d_flex_jb d_flex_ac">
+                    <h4> Subtotal</h4>
+                    <span class="amount"><bdi><span>$</span>00.00</bdi></span>
+               </div> 
+               <div class="note d_flex d_flex_jb d_flex_ac">
+                    <span><img src="images/note.svg" alt=""></span>
+                    <p>PLEASE NOTE: Freight is additional and will be added onto the invoice once order ships.</p>
+               </div>
+               <div class="btn_col d_flex d_flex_jb d_flex_ac">
+                    <a href="#" class="continue_shopping">Continue shopping</a>
+                    <a href="#" class="orange_btn">Proceed to Checkout</a>
+               </div>
+          </div>
+     </div>
+     <!-- cart sidebar end -->
+     <header>
+          <div class="top_header d_flex d_flex_je">
+               <ul class="links d_flex">
+                    <li><a href="#"><img src="images/order_form.svg" alt=""> Order Form Text </a></li>
+                    <li><a href="#"><img src="images/talk_expert.svg" alt=""> Talk to an expert! <span class="text">(201) 343-3330</span> </a></li>
+               </ul>
+               <div class="ticker">
+                    <ul class="active">
+                         <li><img src="images/shop_icon.svg" alt=""> Now shipping from 3 locations!</li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>California</strong></li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>Texas</strong></li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>New Jersey</strong></li>
+                    </ul>
+                    <ul>
+                         <li><img src="images/exit_emergency_icon.svg" alt=""> Exit & Emergency signs are now available! <a href="#">Discover more</a></li>
+                    </ul>
+                    <ul>
+                         <li><img src="images/mini_cart.svg" alt=""> Minimum Cart - <strong>$50</strong> </li>                         
+                    </ul>                     
+               </div>
+          </div>
+          <div class="mid_header">
+               <div class="wrapper d_flex d_flex_ac d_flex_jb">
+                    <div class="fire_logo">
+                         <div class="hambarger"><img src="images/hambarger.svg" alt=""></div>
+                         <a href="index.html" class="brand"><img src="images/brand.svg" alt=""></a>
+                         <span>Safety, <em>Delivered.</em></span>
+                    </div>
+                    <div class="right_col d_flex d_flex_ac">
+                         <div class="mobile_search"> <img src="images/search_icon.svg" alt=""> </div>
+                         <div class="search_col">
+                              <form>
+                                   <input type="text" class="in" placeholder="What are you looking for?">
+                                   <input type="submit" class="sub">
+                              </form>
+                         </div>
+                         <div class="my_account_user">
+                              <div class="user">
+                                   <div class="user_icon">
+                                        <img src="images/user.svg" alt="">
+                                   </div>
+                                   <div class="icon_text">
+                                        <div class="sign_register">
+                                             <a href="#" class="signin">Sign in</a> <span>/</span>
+                                             <a href="#" class="register">Register</a>
+                                        </div>
+                                        <!-- <div class="user_login">
+                                             <span>Maryann Schwartz</span>
+                                             <span>My account</span>
+                                        </div> -->
+                                   </div>
+                              </div>
+                              <div class="overlay1"></div>
+                              <div class="my_account_dropdown">
+                                   <div class="back">
+                                        <img src="images/arrow_s.svg" alt="">
+                                   </div>
+                                   <div class="my_account_user_signin">
+                                        <a href="#" class="orange_btn" >Sign-in</a>
+                                        <p>New to LPI? <a href="#">Sign up here</a></p>
+                                   </div>
+                                   <!-- <div class="my_account_user_login">
+                                        <span class="user_i"><img src="images/user_i.png" alt=""></span><span class="user_text">Maryann Schwartz</span>
+                                   </div> -->
+                                   <ul class="my_account_list">
+                                        <li><a href="#"><span class="text"><img src="images/my_order_i.svg" alt=""></span>My Orders</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_wishlist_i.svg" alt=""></span>My Wishlist <em>4</em></a></li>
+                                        <!-- <li><a href="#"><span class="text"><img src="images/past_purches_i.svg" alt=""></span>Past Purchases</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_shipping_addresses_i.svg" alt=""></span>My Shipping Addresses</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_billing_addresses_i.svg" alt=""></span>My Billing Addresses</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_profile_i.svg" alt=""></span>My Profile</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/log_out_i.svg" alt=""></span>Log out</a></li> -->
+                                   </ul>
+                                   <ul class="nav">
+                                        <li><a href="#">Consult with LPI Expert</a></li>
+                                        <li><a href="#">Support center</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="cart_bag">
+                              <img src="images/cart_bag.svg" alt="">    
+                              <strong>Cart</strong>
+                              <span>0</span>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="bottom_header">
+               <div class="mobile_header">
+                    <div class="icon_title">
+                         <span><img src="images/recent_product_highlights_icon.svg" alt=""></span>
+                         <h2>Shop LPI Fire</h2>
+                    </div>
+                    <div class="back">
+                         <img src="images/arrow_s.svg" alt="">
+                    </div>
+               </div>
+               <div class="wrapper">
+                    <ul class="navigation d_flex d_flex_ac d_flex_jc">
+                         <li class="drop_menu">
+                              <a href="#">Fire Extinguishers & Chemicals</a>
+                              <div class="mega_menu">
+                                   <a href="#" class="white_btn">Shop all <span></span></a>
+                                   <div class="icon_title">
+                                        <span><img src="images/fire_extinguishers_chemicals_icon.svg" alt=""></span>
+                                        <h2>Fire Extinguishers & Chemicals</h2>
+                                   </div>
+                                   <div class="inner d_flex">
+                                        <div class="category_product d_flex">
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img1.png" alt=""></div>
+                                                  <span class="text">Dry Chemical Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img2.png" alt=""></div>
+                                                  <span class="text">Wet Chemical Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img3.png" alt=""></div>
+                                                  <span class="text">Water-Based Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img4.png" alt=""></div>
+                                                  <span class="text">Foam Extinguishers (AFFF)</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img5.png" alt=""></div>
+                                                  <span class="text">CO2 Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img6.png" alt=""></div>
+                                                  <span class="text">Halotron Extinguishers</span>
+                                             </a>
+                                        </div>
+                                        <div class="category_menu">
+                                             <h4>Chemicals</h4>
+                                             <div class="wrap">
+                                                  <ul>
+                                                       <li><a href="#">Ansulex Low PH Wet Chemical Agent</a></li>
+                                                       <li><a href="#">Pyro-Chem Wet Chemical Recharge</a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li>
+                         <li class="drop_menu">
+                              <a href="#">Extinguisher Parts</a>
+                              <div class="mega_menu open">
+                                   <a href="#" class="white_btn">Shop all <span></span></a>
+                                   <div class="icon_title">
+                                        <span><img src="images/extinguisher_parts_icon.svg" alt=""></span>
+                                        <h2>Extinguisher Parts</h2>
+                                   </div>
+                                   <div class="inner d_flex">
+                                        <div class="category_product d_flex">
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img1.png" alt=""></div>
+                                                  <span class="text">Valve Stems</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img2.png" alt=""></div>
+                                                  <span class="text">Gauges</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img3.png" alt=""></div>
+                                                  <span class="text">Wall Hooks & Hangers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img4.png" alt=""></div>
+                                                  <span class="text">O-Rings</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img5.png" alt=""></div>
+                                                  <span class="text">Pull Pins</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img6.png" alt=""></div>
+                                                  <span class="text">Fasteners</span>
+                                             </a>
+                                        </div>
+                                        <div class="category_menu">
+                                             <h4>More categories</h4>
+                                             <div class="wrap">
+                                                  <ul>
+                                                       <li><a href="#">Hose Straps & Hose Clips</a></li>
+                                                       <li><a href="#">CO2 Hoses</a></li>
+                                                       <li><a href="#">Ansul OEM Portables</a></li>
+                                                       <li><a href="#">Amerex OEM Portables</a></li>
+                                                       <li><a href="#">Buckeye OEM Portables</a></li>
+                                                       <li><a href="#">Badger OEM Portables</a></li>
+                                                  </ul>
+                                                  <ul>
+                                                       <li><a href="#">UL Listed Sprinkler System Gauges</a></li>
+                                                       <li><a href="#">Tamper Seals</a></li>
+                                                       <li><a href="#">Brushes</a></li>
+                                                       <li><a href="#">Industrial Cleaner</a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li>
+                         <li><a href="#">Cabinets & Covers</a></li>
+                         <li><a href="#">Exit & Emergency Lighting </a></li>
+                         <li><a href="#">Signs, Labels, & Tags</a></li>
+                         <li><a href="#">Brackets</a></li>
+                         <li><a href="#">System Parts</a></li>
+                         <li><a href="#">First Aid</a></li>
+                         <li><a href="#">Sprinkler Parts</a></li>
+                         <li><a href="#">Pipes and Fittings</a></li>
+                         <li><a href="#">Stands</a></li>
+                    </ul>
+               </div>
+          </div>
+     </header>
+    <section class="inner_banner inner_banner_color">
+          <div class="bg" ></div>
+          <div class="col">
+               <h1>Terms & conditions</h1>
+          </div>
+    </section>
+    <section class="breadcrumb_sec d_flex d_flex_ac d_flex_jb">
+          <ul class="breadcrumb d_flex d_flex_ac">
+              <li><a href="#"><img src="images/home_brad_i1.svg" alt=""> Home</a></li>
+              <li><p>Terms and conditions</p></li>
+          </ul>  
+          <ul class="links d_flex">
+               <li><a href="#"><img src="images/order_form.svg" alt=""> Order Form Text </a></li>
+               <li><a href="#"><img src="images/talk_expert.svg" alt=""> Talk to an expert! <span class="text">(201) 343-3330</span> </a></li>
+          </ul>              
+     </section>
+
+     <section class="terms_condition">
+          <div class="wrapper">
+               <h2>TERMS & CONDITIONS </h2>
+               <div class="inner">                 
+                   <h3>1. THE CONTRACT BETWEEN SELLER AND PURCHASER </h3>
+                    <ul>
+                         <li><strong>A. Acceptance:</strong> The terms and conditions on the front of this document (including any written amendments thereto), constitute Seller’s offer or counteroffer and acceptance thereof by Purchasers is expressly limited to such  terms and conditions alone unless specifically agreed to otherwise in writing by Seller. Such offer or counteroffer is subject to prompt written acceptance by Purchaser and may be withdrawn by Seller at any time prior to  Purchaser’s acceptance or performance hereunder. Such offer or counteroffer by Seller becomes a binding contract either upon acceptance by Purchaser or by Purchasers’ performance, partial or complete, pursuant to  the contract including payment of the goods or products called for hereunder. </li>
+                         <li><strong>B. Modification or Amendment:</strong> No amendment, modification, alteration, or addition to any terms and conditions set forth on the front and back of this document (including any written amendments thereto) shall be  binding on Seller unless and until Seller has expressly agreed in writing thereto. If any document of Purchaser conflicts with, contradicts, or adds any term or condition the front or back of this document (including any  written amendments thereto), is hereby rejected unless and until it is specifically agreed to in writing by Seller. </li>
+                         <li><strong>C. Entire Contract.</strong> Except as otherwise may be expressly provided herein to the contrary, the terms and conditions on the front and back of this document (including any written amendments thereto) set forth the entire  contract between seller and Purchaser. Such terms and conditions, however, also include such specifications industry or governmental standards, drawings, blueprints, instructions, notes , models, technical data or similar  material which are specifically referred to herein (including any written amendments thereto) or attached hereto. </li>
+                    </ul>
+                    <h3>2. PURCHASER’S EXCLUSIVE REMEDIES</h3>
+                    <p>EXCEPT AS OTHERWISE SPECIFICALLY SET FORTH IN WRITING HEREIN, PURCHASER’S SOLE AND EXCLUSIVE REMEDY UNDER ANY LEGAL THEORY SHALL BE LIMITED TO REPAIR OR  REPLACEMENT AT SELLER’S OPTION, OF ANY GOODS OR PRODUCTS SOLD UNDER THIS CONTRACT. IN NO EVENT AND UNDER NO CIRCUMSTANCES SHALL SELLER BE LIABLE FOR ANY CONSEQUENTIAL, SPECIAL, INCIDENTAL,  ECONOMIC OR PROPERTY DAMAGES OR LOSSES. THE FOREGOING STATES PURCHASERS ENTIRE AND SOLE REMEDY. </p>
+                    <h3>3. PRICES</h3>
+                   <p> Unless otherwise agreed to in writing, the prices set forth in this contract shall be adjusted to the Seller’s prices in effect at the time of shipment. Unless otherwise agreed in writing, all prices are FOB Seller’s designated shipping point or points and the prices set forth in this contract shall further be adjusted, if necessary, to reflect any changes in transportation or related charges which are to be paid by Purchaser. Any extra  charges connected with, related to or involved in transportation which Seller has not specifically agreed in writing to pay shall be the sole responsibility of Purchaser including, but not limited to, demurrage, special handling,  storage and similar charges. </p> 
+                    <h3>4. FOB POINT</h3>
+                    <p>Unless otherwise agreed to in writing, the FOB point for the goods and products is Seller’s factory, Saddle Brook, NJ and title passes at the loading dock. </p>
+                    <h3>5. TAXES</h3>
+                    <p>Taxes imposed by any present or further law of Federal, State, County or Municipal authority on the manufacture, sale or use of the goods or products purchased hereunder and required to be paid by Seller shall be  added to the amounts to be paid by Purchaser. Unless specifically provided otherwise in writing, the prices set forth in this contract do not include any such taxes, duties or related charges. Buyer shall furnish evidence of  exemption if applicable. </p>
+                    <h3>6. CREDIT</h3>
+                    <p>Accounts will be opened and goods or products delivered only on approved credit. Seller reserves the right to refuse delivery at any time in whole or in part, except for cash, whenever in doubt as to Purchaser’s  financial condition. </p>
+                    <h3>7. FORCE MAJEURE</h3>
+                    <p>Seller shall not be responsible or liable to any delay or failure to deliver any of the goods of products, provided for hereunder if such delay or failure results directly or indirectly from any act of God, war,  riot, insurrection, embargos, acts of civil or military, fires, floods, explosions, accidents, strikes, differences with workmen, delays in transportation, shortage of fuel, labor or material, delays of suppliers, governmental  restrictions, prohibitions or allocations (including any statute, ordinance, regulation, or order of any government or governmental body,) or any other cause beyond the reasonable control of Seller whether or not similar to  one or more of those herein specified but which prevents, hinders, or interferes with the manufacture, assembly, or delivery of the goods or products called for hereunder. Any such event of circumstances shall release Seller  without penalty from performance, in whole or in part, of its obligation under this contract. Under like circumstances, Purchaser shall be released from its obligation to accept and pay for the goods or products providing that  actual notice in writing of such circumstances are received by Seller from Purchaser prior to the start of manufacture or construction of the goods or products at issue. If Seller is partially excused from performance, either  pursuant to this paragraph, or pursuant to law including the provision of the Uniform Commercial Code. Seller shall not be required to make any allocation of production, shipments, or deliveries that would otherwise be  required under applicable law. IN NO EVENT WILL SELLER BE LIABLE TO ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, ECONOMIC OR PROPERTY DAMAGES OR LOSSES CAUSED BY SELLER’S DELAY IN PERFORMANCE OR FAILURE  TO PERFORM WHETHER EXCUSED OR NOT EXCUSED UNDER THE PROVISIONS OF THIS PARAGRAPH OR APPLICABLE LAW. </p>
+                    <h3>8. CANCELLATION</h3>
+                    <p>Orders may be cancelled in whole or in part or deliveries deferred by Purchaser only with the prior written consent of the Seller and only upon such terms as will protect Seller from any loss in connection  therewith. Purchaser shall pay a reasonable charge for such cancellation or delay which shall at a minimum cover the expense of any direct and indirect commitments Seller has made to any third party, including any of its  suppliers, and future proving a reasonable allowance for overhead and profit. The cancellation charge payable by Purchaser will, in any event, be at least 15% of the net sales price. </p>
+                    <h3>9. DESIGN</h3>
+                    <p>Except as otherwise specifically set forth herein, the Purchaser assumes all responsibility and liability for the design of any goods or products provided hereunder by Seller in accordance with an specifications,  industry or governmental standards, drawings, blueprints, instructions, notes, models, technical data or similar materials requested, provided, or proposed by Purchaser rather than by Seller. 10. PATENTS. Purchaser shall indemnify Seller against any liability for infringement of any United States patents arising out of the use of manufacture of Purchaser’s goods or products. This indemnification shall include the cost  of defending any action alleging patent infringement, modifying or replacing the goods or product so it becomes non-infringing, and/or procuring rights for the use or manufacture of such goods or product. 11. INDEMNIFICTION AND CONTRIBUTION. Purchaser agrees to indemnify ( and/or as allowable under applicable law make contribution) and hold Seller (including any of Seller’s suppliers affected thereby) harmless against and  to pay all loss, cost, damages, and expenses (including reasonable attorney’s fee) arising in connection with or as the result of the incorporation, combination of use of any goods or products purchased hereunder into or with  any goods or product of Purchaser and resulting in any alleged or actual damage or injury to person or property asserted under any legal theory, resulting in any alleged or actual infringement or any patent trademark,  copyright or similar right, or resulting in any other alleged or actual damage or loss to person or property by whomsoever suffered. </p>
+
+                    <h3>12. RETURN OF GOODS</h3>
+                    <p>a. If Purchaser claims any goods or product furnished hereunder are not as ordered, Purchaser must notify Seller in writing with thirty (30) days of Purchaser’s receipt of the shipment or portion thereof at issue.  Similarly, if Purchaser claims any shortage in the goods or products purchased hereunder, he must notify Seller in writing to this effect within thirty (30) days of receipt of the shipment or portion thereof at  issue. Any claim submitted by Purchaser after such thirty (30) day period shall be deemed waived by Purchaser and Purchaser shall further be prohibited from asserting any such claim against Seller. <br>
+                    b. No goods or product purchased hereunder shall be returned under any circumstances without Seller’s written consent. In connection with any return of goods for any reason, Purchaser shall pay all expenses in  connection therewith including all transportation, storage, and related charges and further including any other charges specified as part of the contract including, but not limited thereto, any restocking charges  assessed by Seller. </p>
+
+                    <h3>13. INSPECTION AND TESTING</h3>
+                    <p>Unless otherwise agreed to in writing by Seller, the goods or products covered hereunder may be inspected or tested by Purchaser only at the place of manufacture or at such other place as done  in accordance with any reasonable conditions and rules specified by Seller and must be completed no later than thirty (30) days after Purchaser receives the goods or products being tested. Purchaser further must notify  Seller of any claimed rejection of goods or products so tested with thirty (30) days after their receipt by Purchaser. Thereafter, Purchaser shall be deemed to have waived and further to be prohibited from asserting any  rejection or seeking the return of any such goods or products. </p>
+
+                    <h3>14. PERMISSABLE VARIATIONS</h3>
+                    <p>All goods and products covered by this contract shall be subject to the standard manufacturing and commercial variations and practices of Seller. Seller reserves the right to shop overages and  underages of weight, length, size and or quantity in accordance with Seller’s standard practices. </p>
+
+                    <h3>15. CESSATION OF BUSINESS BY PURCHASER</h3>
+                    <p>If Purchaser for any reason ceases to conduct its business or operation in the normal course of business (including inability to meet its obligation as they mature), or if Purchaser  undergoes bankruptcy, insolvency, receivership, reorganization, or an assignment for the benefit of creditors, then Seller at its option may cancel without penalty any undeliverable portion of the goods or product covered  hereunder and my further take possession of Purchaser’s Production tooling and /or materials until such time that all debts owed Seller have been satisfied. </p>
+
+                    <h3>16. WAIVER</h3>
+                    <p>The failure to either Seller or Purchaser to insist on any occasion upon the performance of any term or condition of this contract, or to exercise any such fight on any occasion, nor shall be construed as a waiver or  relinquishment of such term or condition, on any other occasion, nor shall any such failure be construed as a waiver or relinquishment of any other term or condition of the contract by either Seller or Purchaser. </p>
+
+                    <h3>17. SEVERABILITY</h3>
+                    <p>If any provision included in the terms and conditions set forth in this contract shall be deemed invalid, void or unenforceable by a Court of competent jurisdiction, this contract shall be construed as though  such provision does not appear herein. Any such finding by a Court of competent jurisdiction shall not affect the validity of any other term or condition of this contract. </p>
+
+                    <h3>18. LIMITATION OF ACTION</h3>
+                    <p>Without extending any other time period provided for in this contract, any controversy or claim arising out of or related to this contract, including but not limited to the breach thereof, must be  commenced with one (1) year after the cause of action has occurred. </p>
+
+                    <h3>19. CHOICE OF LAW</h3>
+                    <p>This contract shall be construed, interpreted, and all rights of the parties determined in accordance with the laws of the State of New Jersey. </p>
+
+                    <h3>20. HEADINGS</h3>
+                    <p>Each heading herein has been inserted for convenient reference only and shall not be utilized in any question of interpretation or contraction of the terms and conditions of this contract. </p>
+
+                    <h3>21. Collection Costs/Attorney Fees</h3>
+                    <p>In the event of (a) an action or proceeding commenced by Seller to enforce any right or to collect amount due hereunder or under any other similar contract between Seller and Purchaser, or  (b) an action or proceeding commenced by Purchaser relating to this contract or any other similar contract between Seller and Purchaser (provided Seller is successful in defending against same), Purchaser shall be liable for  all of Seller’s costs and expenses incurred in connection with such collection efforts or enforcement proceedings, including, but not limited to, all attorney’s fees and costs incurred or paid by Seller, whether the matter is  settled privately, or by arbitration, or by legal action at the trial court level and at any and all appellate court levels. </p>
+
+                    <p><strong>THE ARTICLES AND/OR SERVICES COVERED BY THIS INVOICE WERE PRODUCED IN COMPLIANCE WITH THE FAIR LABOR STANDARDS ACT OF 1938, AS AMENDED.</strong></p>
+
+
+
+               </div>
+          </div>
+     </section>
+     <section class="mobile_col">
+          <div class="talk_expert">
+               <div class="text">
+                    <h3>Your Needs,<br>Our Expertise</h3>
+                    <p>Custom Fire Safety<br> Equipment Built<br>Just for You</p>
+               </div>
+               <img src="images/expert_man.png" class="expert_man" alt="">
+               <div class="bottom_text">
+                    <a href="#" class="white_btn">Talk to an expert <span></span></a>
+               </div>
+          </div>
+          <div class="safety_brands">
+               <div class="bg" style="background-image: url(./images/safety_barnds_bg.jpg);"></div>
+               <div class="wrapper">
+                    <h2>A trusted partner for the world’s leading fire safety brands</h2>
+                    <div class="wrap">
+                         <div class="inner d_flex d_flex_ac d_flex_jc">
+                              <a href="#"><img src="images/logo1.svg" alt=""></a>
+                              <a href="#"><img src="images/logo2.svg" alt=""></a>
+                              <a href="#"><img src="images/logo3.svg" alt=""></a>
+                              <a href="#"><img src="images/logo4.svg" alt=""></a>
+                              <a href="#"><img src="images/logo5.svg" alt=""></a>
+                              <a href="#"><img src="images/logo6.svg" alt=""></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section class="shipping_locations shipping_locations_expert">    
+          <div class="wrapper">
+               <div class="left_col">
+                    <div class="col">
+                         <h2>Nationwide Shipping from 3 Strategic Locations</h2>
+                         <p>Fast, reliable delivery to meet your fire safety needs wherever you are!</p>
+                         <ul class="d_flex d_flex_ac">
+                              <li>California</li>
+                              <li>Texas</li>
+                              <li>New Jersey</li>
+                         </ul>
+                         <a href="#" class="white_btn">Locations <span></span></a>
+                    </div>
+                    <div class="map"><img src="images/map.png" alt=""></div>
+               </div>
+               <div class="right_col">
+                    <div class="talk_expert">
+                         <div class="text">
+                              <h3>Your Needs,<br>Our Expertise</h3>
+                              <p>Custom Fire Safety<br> Equipment Built<br>Just for You</p>
+                         </div>
+                         <img src="images/expert_man.png" class="expert_man" alt="">
+                         <div class="bottom_text">
+                              <a href="#" class="white_btn">Talk to an expert <span></span></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- footer start -->
+     <footer>
+          <div class="top_footer">
+               <div class="wrapper">
+                    <a href="index.html" class="footer_logo"><img src="images/brand.svg" alt=""></a>
+                    <div class="inner d_flex ">
+                         <div class="left_col">
+                              <div class="colin">
+                                   <h3><a href="#">Shop</a></h3>
+                                   <ul>
+                                        <li><a href="#">Fire Extinguishers & Chemicals</a></li>
+                                        <li><a href="#">System Parts</a></li>
+                                        <li><a href="#">Extinguisher Parts</a></li>
+                                        <li><a href="#">First Aid Kits & Safety</a></li>
+                                        <li><a href="#">Cabinets, Accessories, & Covers</a></li>
+                                        <li><a href="#">Sprinkler Parts</a></li>
+                                        <li><a href="#">Exit & Emergency Lighting </a></li>
+                                        <li><a href="#">Pipes and Fittings</a></li>
+                                        <li><a href="#">Signs, Labels, & Tags</a></li>
+                                        <li><a href="#">Stands</a></li>
+                                        <li><a href="#">Brackets</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Company</a></h3>
+                                   <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Our Mission</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Custom Orders</a></h3>
+                                   <ul>
+                                        <li><a href="#">Consult Our Experts</a></li>
+                                        <li><a href="#">Custom Solutions</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Contact us</a></h3>
+                                   <ul>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#">Locations</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Support</a></h3>
+                                   <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="right_col">
+                              <div class="colin">
+                                   <h3>HQ</h3>
+                                   <div class="col">
+                                        <span><img src="images/f_tell.svg" alt=""></span>
+                                        <a href="#">(201) 343-3330</a>
+                                   </div>
+                                   <div class="col">
+                                        <span><img src="images/f_email.svg" alt=""></span>
+                                        <a href="#">info@lpifire.com</a>
+                                   </div>                                  
+                                   <div class="col">
+                                        <span><img src="images/f_map.svg" alt=""></span>
+                                        <p><strong>LPI Fire</strong><br>
+                                             421 N. Midland Avenue, 
+                                             Saddle Brook, NJ 07663
+                                        </p>
+                                   </div>
+                                   <div class="col">
+                                        <p><strong>Warehouses:</strong></p>
+                                        <ul>
+                                             <li>Vista, CA</li>
+                                             <li>Arlington, TX</li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="safe_secure">
+                         <div class="left_ss">
+                              <img src="images/dss.png" alt="">
+                              <p>Safe and secure checkout</p>
+                         </div>
+                         <div class="right_ss">
+                              <p>We accept</p>
+                              <ul>
+                                   <li><img src="images/AMEX.png" alt=""></li>
+                                   <li><img src="images/visa-logo.png" alt=""></li>
+                                   <li><img src="images/PayPal.png" alt=""></li>
+                                   <li><img src="images/Mastercard.png" alt=""></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="bttom_footer">
+               <div class="wrapper d_flex d_flex_ac d_flex_jb">
+                    <ul class="d_flex d_flex_ac">
+                         <li>© 2025 LPI Fire</li>
+                         <li>Rights reserved</li>
+                    </ul>
+                    <p>* All images, product descriptions, and information on this website are for reference only and may be subject to change without notice. LPI Fire is not responsible for errors, omissions, or third-party content.</p>
+               </div>
+          </div>
+     </footer>
+     <!-- footer end -->
+     <!-- <a href="#" class="sticky_whatsapp"><img src="images/whatsapp.svg" alt=""></a> -->
+     <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+     <script src="js/jquery.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+     <script src="js/lenis.js"></script>
+     <script src="js/swiper.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+     <script src="js/script.js"></script>
+
+
+</body>
+</html>

@@ -14,7 +14,7 @@
 
 <body>
      <!-- cart sidebar start -->
-     <div class="overlay"></div>
+     <div class="overlay "></div>
      <div class="mini_cart">
           <div class="mini_cart_header">
                <div class="inner d_flex d_flex_ac d_flex_jb">
@@ -150,7 +150,7 @@
                                         <img src="images/arrow_s.svg" alt="">
                                    </div>
                                    <div class="my_account_user_signin">
-                                        <a href="#" class="orange_btn" >Sign-in</a>
+                                        <a href="#" class="orange_btn" data-popup="sign-in" >Sign-in</a>
                                         <p>New to LPI? <a href="#">Sign up here</a></p>
                                    </div>
                                    <!-- <div class="my_account_user_login">
@@ -822,6 +822,186 @@
      </footer>
      <!-- footer end -->
      <!-- <a href="#" class="sticky_whatsapp"><img src="images/whatsapp.svg" alt=""></a> -->
+
+     <!-- login popup start -->
+     <div class="comman_popup login_popup">
+          <img src="images/close_img.svg" class="close_popup" alt="">
+          <div class="inner d_flex">
+               <div class="left_col">
+                    <div class="icon_title">
+                         <span><img src="images/login_pop_icon.svg" alt=""></span>
+                         <h2>Welcome to LPI Fire</h2>
+                    </div>
+                    <div class="wrap">
+                         <div class="inner_title">
+                              <div class="text">
+                                   <h4>Welcome back</h4>
+                                   <h5>Enter your details to login</h5>
+                              </div>
+                         </div>
+                         <form>
+                              <div class="col">
+                                   <h6>Enter your email <em>*</em></h6>
+                                   <input type="text" class="in email" placeholder="Enter your email">
+                              </div>
+                              <div class="col">
+                                   <h6>Enter your password <em>*</em></h6>
+                                   <input type="text" class="in password" placeholder="Password">
+                              </div>
+                              <label for="agree" class="checkbox">
+                                   <input type="checkbox" id="agree">
+                                   <span>Remember My Details </span>
+                              </label>
+                              <input type="submit" value="Sign-in" class="sub orange_btn">
+                              <a href="#" class="forgot_password">Forgot password?</a>
+                              <div class="one_time_password">
+                                   <a href="#" class="otp"><img src="images/otp.svg" alt=""> Sign in with One Time Password</a>
+                              </div>
+                         </form>
+                    </div>
+               </div>
+               <div class="right_col">
+                    <img src="images/pop_logo.svg" alt="">
+                    <h4>New to LPI Fire? <br>Create Your Account Today</h4>
+                    <p>Unlock exclusive benefits, streamlined checkout, and personalized B2B pricing – join our community for a seamless fire safety experience.</p>
+                    <a href="#" class="orange_btn">Create New Account</a>
+               </div>
+          </div>
+     </div>
+     <!-- login popup end -->
+     <!-- login_popup_otp start -->
+     <div class="comman_popup login_popup_otp">
+          <img src="images/close_img.svg" class="close_popup" alt="">
+          <div class="inner d_flex">
+               <div class="left_col">
+                    <div class="icon_title">
+                         <span><img src="images/login_pop_icon.svg" alt=""></span>
+                         <h2>Welcome to LPI Fire</h2>
+                    </div>
+                    <div class="wrap">
+                         <div class="inner_title">
+                              <div class="text">
+                                   <h4>Send me a verification code</h4>
+                                   <h5>Get a code by email or phone for a password-free sign in</h5>
+                              </div>
+                         </div>
+                         <form>
+                              <div class="col">
+                                   <h6>Verify with <em>*</em><img src="images/notification.svg" alt=""></h6>
+                                   <div class="verify_radio">
+                                        <label for="emailradio">
+                                             <input type="radio" name="verifyradio" id="emailradio" checked>
+                                             <span><img src="images/email-otp-icon.png" alt=""> Email Address</span>
+                                        </label>
+                                        <label for="phoneradio">
+                                             <input type="radio" name="verifyradio" id="phoneradio">
+                                             <span><img src="images/phone-otp-icon.png" alt=""> Mobile Phone</span>
+                                        </label>
+                                   </div>
+                              </div>
+                              <div class="col verify_email active">
+                                   <h6>Enter Registered Email <em>*</em></h6>
+                                   <input type="text" class="in" placeholder="Enter your email">
+                              </div>                              
+                              <div class="col verify_phone">
+                                   <h6>Enter Registered Phone <em>*</em></h6>
+                                   <input type="text" class="in" placeholder="Enter your Phone">
+                              </div>  
+                              <input type="submit" value="Send me a code" class="sub orange_btn">
+                              <a href="#" class="back_signin"> Back to sign-in</a>
+                         </form>
+                    </div>
+               </div>
+               <div class="right_col">
+                    <img src="images/pop_logo.svg" alt="">
+                    <h4>New to LPI Fire? <br>Create Your Account Today</h4>
+                    <p>Unlock exclusive benefits, streamlined checkout, and personalized B2B pricing – join our community for a seamless fire safety experience.</p>
+                    <a href="#" class="orange_btn">Create New Account</a>
+               </div>
+          </div>
+     </div>
+     <!-- login_popup_otp end -->
+     <!-- phone_otp start -->
+     <div class="comman_popup phone_otp_popup ">
+          <img src="images/close_img.svg" class="close_popup" alt="">
+          <div class="inner d_flex">
+               <div class="left_col">
+                    <div class="icon_title">
+                         <span><img src="images/login_pop_icon.svg" alt=""></span>
+                         <h2>Welcome to LPI Fire</h2>
+                    </div>
+                    <div class="wrap">
+                         <div class="inner_title">
+                              <span><img src="images/phone_icon_pop.png" alt=""></span>
+                              <div class="text">
+                                   <h4>Check your Phone</h4>
+                                   <h5>Wev’e just sent you a code</h5>
+                              </div>
+                         </div>
+                         <form>
+                              <div class="col">
+                                   <input type="text" class="in" placeholder="Enter 6 digit code">
+                              </div>
+                              <label for="phoneotp" class="checkbox">
+                                   <input type="checkbox" id="phoneotp">
+                                   <span>Remember my device </span>
+                              </label>
+                              <input type="submit" value="Login" class="sub orange_btn">
+                              <a href="#" class="resend_code">Resend code</a><br>
+                              <a href="#" class="back_signin"> Back to sign-in</a>
+                         </form>
+                    </div>
+               </div>
+               <div class="right_col">
+                    <img src="images/pop_logo.svg" alt="">
+                    <h4>New to LPI Fire? <br>Create Your Account Today</h4>
+                    <p>Unlock exclusive benefits, streamlined checkout, and personalized B2B pricing – join our community for a seamless fire safety experience.</p>
+                    <a href="#" class="orange_btn">Create New Account</a>
+               </div>
+          </div>
+     </div>
+     <!-- phone_otp end -->
+      <!-- email_otp_popup start -->
+     <div class="comman_popup email_otp_popup ">
+          <img src="images/close_img.svg" class="close_popup" alt="">
+          <div class="inner d_flex">
+               <div class="left_col">
+                    <div class="icon_title">
+                         <span><img src="images/login_pop_icon.svg" alt=""></span>
+                         <h2>Welcome to LPI Fire</h2>
+                    </div>
+                    <div class="wrap">
+                         <div class="inner_title">
+                              <span><img src="images/email_icon_pop.png" alt=""></span>
+                              <div class="text">
+                                   <h4>Check your Email</h4>
+                                   <h5>Wev’e just sent you a code</h5>
+                              </div>
+                         </div>
+                         <form>
+                              <div class="col">
+                                   <input type="text" class="in" placeholder="Enter 6 digit code">
+                              </div>
+                              <label for="phoneotp" class="checkbox">
+                                   <input type="checkbox" id="phoneotp">
+                                   <span>Remember my device </span>
+                              </label>
+                              <input type="submit" value="Login" class="sub orange_btn">
+                              <a href="#" class="resend_code">Resend code</a><br>
+                              <a href="#" class="back_signin"> Back to sign-in</a>
+                         </form>
+                    </div>
+               </div>
+               <div class="right_col">
+                    <img src="images/pop_logo.svg" alt="">
+                    <h4>New to LPI Fire? <br>Create Your Account Today</h4>
+                    <p>Unlock exclusive benefits, streamlined checkout, and personalized B2B pricing – join our community for a seamless fire safety experience.</p>
+                    <a href="#" class="orange_btn">Create New Account</a>
+               </div>
+          </div>
+     </div>
+     <!-- email_otp_popup end -->
+
      <script src="js/jquery.min.js"></script>
      <script src="js/lenis.js"></script>
      <script src="js/swiper.min.js"></script>
