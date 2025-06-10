@@ -420,7 +420,7 @@ input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0 }
 .shipping_locations .map{position: absolute;top: 0;bottom: 0;right: 135px;margin: auto;height: 100%;}
 
 
-body .shipping_locations_expert { padding: 52px 0 72px; }
+body .shipping_locations_expert { padding: 52px 0 72px;overflow: hidden;}
 body .shipping_locations_expert .wrapper{display: flex;justify-content: space-between;}
 body .shipping_locations_expert .left_col{width: calc(100% - 416px);padding: 38px 0 38px 88px;}
 body .shipping_locations_expert .right_col{width:400px;}
@@ -1267,6 +1267,7 @@ input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0 }
 .order_had h3.open img{transform: rotate(90deg);}
 .order_link_list{}
 .order_link_list a{padding: 8px 16px;color: #293D82;line-height: 24px;font-size: 14px;font-weight: 500;font-family: var(--grotesk);display: flex;align-items: center;background-color: #F5F7FE;margin-right: 24px;border-radius: 4px;}
+.order_link_list a em{font-style: normal;}
 .order_link_list a:last-child{margin-right: 0;}
 .order_link_list a img{margin-right: 8px;}
 .order_link_list a:hover{background-color: #E4E9F8;}

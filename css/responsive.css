@@ -42,8 +42,10 @@
     .filter_containt .product_categories:not(.product_categories_slider) .swiper-slide:nth-child(4n) { margin-right: 0; }
     .categories_results_list .colin .orange_btn { padding: 4px 15px; }
     body .shipping_locations_expert .left_col { padding: 38px 0 38px 40px; }
-
     .related_products_single .categories_results_list .colin { width: 23.7%}
+
+    .order_sec .right_order { padding: 35px 40px 100px 30px; }
+
 
 
 }
@@ -104,6 +106,11 @@
     .checkout_wrap .right_col { width: 31%; }
     .checkout_wrap .left_col { width: 67%; }
     .review_cart .review_cart_total h4 { width: 62.5%; }
+
+    .order_sec .right_order { padding: 35px 20px 100px 20px; }
+    .order_link_list a { padding: 8px 12px; margin-right: 12px; }
+
+
 
 
 
@@ -232,6 +239,12 @@
     .checkout_wrap .right_col { padding-top: 47px; }
     .payment_sec { margin: 20px auto 0; }
 
+    .order_results_title{}
+    .order_results_title .right_col{width: 100%;margin-top: 16px;}
+    .order_results_title .col { width: 32%; }
+    .order_sec .title .order_link_list{width: 100%;margin-top: 16px;}
+
+
 
 }
 /* 768 */
@@ -326,6 +339,9 @@
     .checkout_thankyou_sec { padding: 24px 8px 180px; }
   
 
+    .order_sec .left_order{display: none;}
+    .order_sec .right_order{float: none;width: 100%;}
+    .order_sec::before{display: none;}
 
 
 
@@ -712,6 +728,53 @@
     .checkout_thankyou .btn_col a { width: 100%; }
     .checkout_thankyou .btn_col a.continue_shopping{margin-top:24px;}
     .checkout_thankyou_sec .my_cart_inner .my_cart_item li:nth-child(3) { opacity: 1; }
+
+    .order_sec .right_order { padding: 32px 8px 100px; }
+    .order_sec .title h2 { font-size: 24px; line-height: 32px; }
+    .order_sec .title { padding: 11.5px 0; }
+    .order_results { padding:16px 16px 32px; max-width: 100%; margin: 0 auto 8px; }
+    .order_results_title { border-bottom:none; margin-bottom: 0; padding: 16px 0; }
+    .order_results_title .right_col{justify-content: space-between;}
+    .order_results_title .col:first-child{width: 100%;margin: 0;margin-bottom: 8px;}
+    .order_results_title .col { width:calc(50% - 4px);margin: 0;}
+    .order_had { padding: 0;}
+    .order_had h3{margin-bottom: 16px;width: 100%;}
+    .order_had .order_link_list{width: 100%;}
+    .order_link_list a { width: calc(50% - 6px); }
+    .order_Shipping_date_status{padding: 16px 0 8px;}
+    .order_Shipping_date_status li { width: 100%; padding-right: 0;margin-bottom: 8px;}
+    .order_Shipping_date_status li:last-child{margin-bottom: 0;}
+    .order_results .my_cart_inner .my_cart_item { padding: 8px 0;margin-top: 0;}
+    .order_results .my_cart_inner .my_cart_item li:first-child { width: 64px; height: 64px; }
+    .order_results .my_cart_inner .my_cart_item li:nth-child(2) { width: calc(100% - 64px); padding-left: 8px; }
+    .order_results .my_cart_inner .my_cart_item li:nth-child(3) { padding-left: 72px; }
+    .order_had h3 img { top: 5px; }
+
+    .order_link_list a { margin-right: 8px; }
+    .order_sec .title .order_link_list { width: 100%; margin-top: 8px; }
+    .order_sec .title .order_link_list a { width: calc(33.33% - 6px);flex-wrap: wrap;font-size: 12px;text-align: center;padding:4px 5px;justify-content: center;}
+    .order_sec .title .order_link_list a em{display: block;width: 100%;}
+    .my_order_details .order_had {padding: 0 16px;}
+    .my_order_details .order_had h3{line-height: 40px;}
+    .my_order_details .order_Shipping_date_status { padding: 0 16px 16px; }
+    .my_order_details .order_Shipping_date_status li { width: 100%; }
+    .my_order_details .order_results { padding: 16px 0 32px; }
+    .my_order_details  .my_cart_inner .my_cart_total,.my_order_details  .comman_total_price { padding: 20px 16px 20px 16px !important; }
+    .my_order_details .my_cart_inner .my_cart_total .amount{padding-right: 0;}
+
+    .order_Shipping_billing_details { padding: 16px 0px 24px; max-width: 100%; margin: 0 auto 8px; }
+    .order_Shipping_billing_details .billing_details_col, 
+    .order_Shipping_billing_details .shipping_details_col { padding: 0 0 0px; }
+    .order_Shipping_billing_details h4{padding: 0 24px;}
+    .order_Shipping_billing_details ul{padding-left: 24px;padding-right: 24px;}
+    .order_Shipping_billing_details ul li { font-size: 12px; line-height: 24px; padding-left: 6px;align-items: flex-start;}
+    .order_Shipping_billing_details ul li span:first-child { width: 50%;}
+    .order_Shipping_billing_details ul li span:last-child{width: 50%;}
+    .order_Shipping_billing_details ul li::before { width: 3px; height: 3px; left: -1px; top: 10px; }
+    .order_Shipping_billing_details>div:not(:last-child){margin-bottom: 24px;}
+
+
+
 
 
 
