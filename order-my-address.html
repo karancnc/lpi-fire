@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>LPI-fire</title>
+     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+     <link rel="stylesheet" href="css/swiper.min.css" />
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+     <link rel="stylesheet" href="fonts/stylesheet.css">
+     <link rel="stylesheet" href="css/screen.css">
+     <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+     <!-- cart sidebar start -->
+     <div class="overlay"></div>
+     <div class="mini_cart">
+          <div class="mini_cart_header">
+               <div class="inner d_flex d_flex_ac d_flex_jb">
+                    <div class="icon_title">
+                         <span><img src="images/my_shopping_cart_icon.svg" alt=""></span>
+                         <h2>My <em>Shopping</em> cart</h2>
+                    </div>
+                    <div class="right_m d_flex d_flex_ac">
+                         <a href="#" class="white_btn">View cart <span></span></a>
+                         <span class="cart_close"><img src="images/cart_close.svg" alt=""></span>
+                    </div>
+               </div>
+               <div class="minimum_cart_note">
+                  <img src="images/mini_cart_red_icon.svg" alt="">  Minimum Cart - <strong>$50</strong>
+               </div>
+          </div>
+          <!-- cart empty -->
+          <!-- <div class="mini_cart_empty">
+               <img src="images/mini_cart_empty.svg" alt="">
+               <h4>No items in your cart</h4>
+               <p>Items you will add to your cart will appear here.</p>
+          </div> -->
+          <div class="mini_cart_content">
+               <div class="mini_cart_list">
+                    <ul class="mini_cart_item">
+                         <li>
+                              <a href="#"> <img src="images/cart_item1.jpg" alt=""> </a>
+                         </li>
+                         <li>
+                              <a href="#" class="link">Buckeye 2.5lb Fire Extinguisher with Vehicle Bracket</a>
+                              <h4><img src="images/tag.png" alt=""> Part Number: LPI-CCHS</h4>
+                              <h5>$49.99 price per unit</h5>
+                              <p class="price"> 
+                                   <span class="amount"><bdi><span class="symbol">$</span>49.99</bdi></span>                                
+                              </p>                              
+                         </li>
+                         <li>
+                              <div class="edit_delete_btn">
+                                   <a href="#" class="mini_edit">
+                                        <img src="images/edit_i.svg" alt="">
+                                        <div class="tooltip"> Edit fields</div>
+                                   </a>
+                                   <a href="#" class="mini_delete">
+                                        <img src="images/delete_i.svg" alt="">
+                                        <div class="tooltip"> Remove item </div>
+                                   </a>
+                              </div>
+                              <div class="quantity">
+                                    <div class="counter">
+                                         <button class="decrement"><img src="images/decrement.svg" alt=""></button>
+                                         <input type="number" class="input-text qty text" value="1" min="1" max="20" step="1" inputmode="numeric" autocomplete="off">
+                                         <button class="increment"><img src="images/increment.svg" alt=""></button>
+                                    </div>
+                              </div>
+                         </li>
+                    </ul>
+                    
+               </div>
+          </div>
+
+
+          <div class="mini_cart_bottom">
+              <div class="total d_flex d_flex_jb d_flex_ac">
+                    <h4> Subtotal</h4>
+                    <span class="amount"><bdi><span>$</span>00.00</bdi></span>
+               </div> 
+               <div class="note d_flex d_flex_jb d_flex_ac">
+                    <span><img src="images/note.svg" alt=""></span>
+                    <p>PLEASE NOTE: Freight is additional and will be added onto the invoice once order ships.</p>
+               </div>
+               <div class="btn_col d_flex d_flex_jb d_flex_ac">
+                    <a href="#" class="continue_shopping">Continue shopping</a>
+                    <a href="#" class="orange_btn">Proceed to Checkout</a>
+               </div>
+          </div>
+     </div>
+     <!-- cart sidebar end -->
+     <header>
+          <div class="top_header d_flex d_flex_je">
+               <ul class="links d_flex">
+                    <li><a href="#"><img src="images/order_form.svg" alt=""> Order Form Text </a></li>
+                    <li><a href="#"><img src="images/talk_expert.svg" alt=""> Talk to an expert! <span class="text">(201) 343-3330</span> </a></li>
+               </ul>
+               <div class="ticker">
+                    <ul class="active">
+                         <li><img src="images/shop_icon.svg" alt=""> Now shipping from 3 locations!</li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>California</strong></li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>Texas</strong></li>
+                         <li><img src="images/fire_icon.svg" alt=""><strong>New Jersey</strong></li>
+                    </ul>
+                    <ul>
+                         <li><img src="images/exit_emergency_icon.svg" alt=""> Exit & Emergency signs are now available! <a href="#">Discover more</a></li>
+                    </ul>
+                    <ul>
+                         <li><img src="images/mini_cart.svg" alt=""> Minimum Cart - <strong>$50</strong> </li>                         
+                    </ul>                     
+               </div>
+          </div>
+          <div class="mid_header">
+               <div class="wrapper d_flex d_flex_ac d_flex_jb">
+                    <div class="fire_logo">
+                         <div class="hambarger"><img src="images/hambarger.svg" alt=""></div>
+                         <a href="index.html" class="brand"><img src="images/brand.svg" alt=""></a>
+                         <span>Safety, <em>Delivered.</em></span>
+                    </div>
+                    <div class="right_col d_flex d_flex_ac">
+                         <div class="mobile_search"> <img src="images/search_icon.svg" alt=""> </div>
+                         <div class="search_col">
+                              <form>
+                                   <input type="text" class="in" placeholder="What are you looking for?">
+                                   <input type="submit" class="sub">
+                              </form>
+                         </div>
+                         <div class="my_account_user">
+                              <div class="user">
+                                   <div class="user_icon">
+                                        <img src="images/user.svg" alt="">
+                                   </div>
+                                   <div class="icon_text">
+                                        <div class="sign_register">
+                                             <a href="#" class="signin">Sign in</a> <span>/</span>
+                                             <a href="#" class="register">Register</a>
+                                        </div>
+                                        <!-- <div class="user_login">
+                                             <span>Maryann Schwartz</span>
+                                             <span>My account</span>
+                                        </div> -->
+                                   </div>
+                              </div>
+                              <div class="overlay1"></div>
+                              <div class="my_account_dropdown">
+                                   <div class="back">
+                                        <img src="images/arrow_s.svg" alt="">
+                                   </div>
+                                   <div class="my_account_user_signin">
+                                        <a href="#" class="orange_btn" >Sign-in</a>
+                                        <p>New to LPI? <a href="#">Sign up here</a></p>
+                                   </div>
+                                   <!-- <div class="my_account_user_login">
+                                        <span class="user_i"><img src="images/user_i.png" alt=""></span><span class="user_text">Maryann Schwartz</span>
+                                   </div> -->
+                                   <ul class="my_account_list">
+                                        <li><a href="#"><span class="text"><img src="images/my_order_i.svg" alt=""></span>My Orders</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_wishlist_i.svg" alt=""></span>My Wishlist <em>4</em></a></li>
+                                        <!-- <li><a href="#"><span class="text"><img src="images/past_purches_i.svg" alt=""></span>Past Purchases</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_shipping_addresses_i.svg" alt=""></span>My Shipping Addresses</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_billing_addresses_i.svg" alt=""></span>My Billing Addresses</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/my_profile_i.svg" alt=""></span>My Profile</a></li>
+                                        <li><a href="#"><span class="text"><img src="images/log_out_i.svg" alt=""></span>Log out</a></li> -->
+                                   </ul>
+                                   <ul class="nav">
+                                        <li><a href="#">Consult with LPI Expert</a></li>
+                                        <li><a href="#">Support center</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="cart_bag">
+                              <img src="images/cart_bag.svg" alt="">    
+                              <strong>Cart</strong>
+                              <span>0</span>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="bottom_header">
+               <div class="mobile_header">
+                    <div class="icon_title">
+                         <span><img src="images/recent_product_highlights_icon.svg" alt=""></span>
+                         <h2>Shop LPI Fire</h2>
+                    </div>
+                    <div class="back">
+                         <img src="images/arrow_s.svg" alt="">
+                    </div>
+               </div>
+               <div class="wrapper">
+                    <ul class="navigation d_flex d_flex_ac d_flex_jc">
+                         <li class="drop_menu">
+                              <a href="#">Fire Extinguishers & Chemicals</a>
+                              <div class="mega_menu">
+                                   <a href="#" class="white_btn">Shop all <span></span></a>
+                                   <div class="icon_title">
+                                        <span><img src="images/fire_extinguishers_chemicals_icon.svg" alt=""></span>
+                                        <h2>Fire Extinguishers & Chemicals</h2>
+                                   </div>
+                                   <div class="inner d_flex">
+                                        <div class="category_product d_flex">
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img1.png" alt=""></div>
+                                                  <span class="text">Dry Chemical Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img2.png" alt=""></div>
+                                                  <span class="text">Wet Chemical Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img3.png" alt=""></div>
+                                                  <span class="text">Water-Based Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img4.png" alt=""></div>
+                                                  <span class="text">Foam Extinguishers (AFFF)</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img5.png" alt=""></div>
+                                                  <span class="text">CO2 Extinguishers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/cat_img6.png" alt=""></div>
+                                                  <span class="text">Halotron Extinguishers</span>
+                                             </a>
+                                        </div>
+                                        <div class="category_menu">
+                                             <h4>Chemicals</h4>
+                                             <div class="wrap">
+                                                  <ul>
+                                                       <li><a href="#">Ansulex Low PH Wet Chemical Agent</a></li>
+                                                       <li><a href="#">Pyro-Chem Wet Chemical Recharge</a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li>
+                         <li class="drop_menu">
+                              <a href="#">Extinguisher Parts</a>
+                              <div class="mega_menu open">
+                                   <a href="#" class="white_btn">Shop all <span></span></a>
+                                   <div class="icon_title">
+                                        <span><img src="images/extinguisher_parts_icon.svg" alt=""></span>
+                                        <h2>Extinguisher Parts</h2>
+                                   </div>
+                                   <div class="inner d_flex">
+                                        <div class="category_product d_flex">
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img1.png" alt=""></div>
+                                                  <span class="text">Valve Stems</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img2.png" alt=""></div>
+                                                  <span class="text">Gauges</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img3.png" alt=""></div>
+                                                  <span class="text">Wall Hooks & Hangers</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img4.png" alt=""></div>
+                                                  <span class="text">O-Rings</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img5.png" alt=""></div>
+                                                  <span class="text">Pull Pins</span>
+                                             </a>
+                                             <a href="#" class="col">
+                                                  <div class="img"><img src="images/extinguisher_img6.png" alt=""></div>
+                                                  <span class="text">Fasteners</span>
+                                             </a>
+                                        </div>
+                                        <div class="category_menu">
+                                             <h4>More categories</h4>
+                                             <div class="wrap">
+                                                  <ul>
+                                                       <li><a href="#">Hose Straps & Hose Clips</a></li>
+                                                       <li><a href="#">CO2 Hoses</a></li>
+                                                       <li><a href="#">Ansul OEM Portables</a></li>
+                                                       <li><a href="#">Amerex OEM Portables</a></li>
+                                                       <li><a href="#">Buckeye OEM Portables</a></li>
+                                                       <li><a href="#">Badger OEM Portables</a></li>
+                                                  </ul>
+                                                  <ul>
+                                                       <li><a href="#">UL Listed Sprinkler System Gauges</a></li>
+                                                       <li><a href="#">Tamper Seals</a></li>
+                                                       <li><a href="#">Brushes</a></li>
+                                                       <li><a href="#">Industrial Cleaner</a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li>
+                         <li><a href="#">Cabinets & Covers</a></li>
+                         <li><a href="#">Exit & Emergency Lighting </a></li>
+                         <li><a href="#">Signs, Labels, & Tags</a></li>
+                         <li><a href="#">Brackets</a></li>
+                         <li><a href="#">System Parts</a></li>
+                         <li><a href="#">First Aid</a></li>
+                         <li><a href="#">Sprinkler Parts</a></li>
+                         <li><a href="#">Pipes and Fittings</a></li>
+                         <li><a href="#">Stands</a></li>
+                    </ul>
+               </div>
+          </div>
+     </header>
+     <section class="inner_banner inner_banner_color">
+               <div class="bg" ></div>
+               <div class="col">
+                    <h1>Welcome Back, Maryann</h1>
+               </div>
+     </section>
+     <section class="breadcrumb_sec d_flex d_flex_ac d_flex_jb">
+          <ul class="breadcrumb d_flex d_flex_ac">
+               <li><a href="#"><img src="images/home_brad_i1.svg" alt=""> Home</a></li>
+               <li><p>My Shipping Addresses</p></li>
+          </ul>  
+          <ul class="links d_flex">
+               <li><a href="#"><img src="images/order_form.svg" alt=""> Order Form Text </a></li>
+               <li><a href="#"><img src="images/talk_expert.svg" alt=""> Talk to an expert! <span class="text">(201) 343-3330</span> </a></li>
+          </ul>              
+     </section>
+
+     <section class="order_sec">
+          <div class="left_order">
+               <ul class="my_account_list">
+                    <li><a href="#"><span class="text"><img src="images/my_order_i.svg" alt=""></span>My Orders</a></li>
+                    <li><a href="#"><span class="text"><img src="images/my_wishlist_i.svg" alt=""></span>My Wishlist <em>8</em></a></li>
+                    <li><a href="#"><span class="text"><img src="images/past_purches_i.svg" alt=""></span>Past Purchases <em>8</em></a></li>
+                    <li><a href="#" class="active"><span class="text"><img src="images/my_shipping_addresses_i.svg" alt=""></span>My Shipping Addresses</a></li>
+                    <li><a href="#"><span class="text"><img src="images/my_billing_addresses_i.svg" alt=""></span>My Billing Addresses</a></li>
+                    <li><a href="#"><span class="text"><img src="images/my_profile_i.svg" alt=""></span>My Profile</a></li>
+                    <li><a href="#"><span class="text"><img src="images/log_out_i.svg" alt=""></span>Log out</a></li>
+               </ul>
+          </div>
+          <div class="right_order">
+               <!-- my_order tab 4 start -->
+               <div class="my_address_sec">
+                    <div class="title d_flex d_flex_ac d_flex_jb">
+                         <h2>My Shipping Addresses </h2>
+                    </div>
+                    <!-- order_results_title -->
+                    <div class="order_results_title d_flex d_flex_ac d_flex_jb">
+                         <div class="icon_title">
+                              <span><img src="images/my_shipping_addresses_i.svg" alt=""></span>
+                              <h2><strong>3 </strong> Addresses</h2>
+                         </div>
+                         <div class="right_col">
+                              <a href="#" class="orange_btn">Add New Address</a>
+                         </div>
+                    </div>
+                    <div class="order_Shipping_billing_details">
+                         <div class="billing_details_col">
+                              <div class="billing_had d_flex d_flex_ac d_flex_jb">
+                                   <h4>Address #1</h4>
+                                   <div class="order_link_list d_flex d_flex_ac">
+                                        <a href="#" class="add_edit"><img src="images/add_edit.svg" alt="">Edit</a>
+                                        <a href="#" class="add_delete"><img src="images/add_delete.svg" alt="">Delete</a>
+                                        <a href="#" class="add_default"><img src="images/add_default.svg" alt="">Default address</a>
+                                   </div>
+                              </div>
+                              <ul>
+                                   <li><span>Name: </span><span>Burt Schwartz</span></li>
+                                   <li><span>Company: </span><span>Todd’s Fire Warehouse</span></li>
+                                   <li><span>Primary Contact: </span><span>burt@toddsfire.com, 201-343-3331</span></li>
+                                   <li><span>Location:  </span><span>130 Gamwell Street, Dock #3, Hasbrouck Heights, NJ 07604</span></li>
+                                   <li><span>Tax ID:    </span><span>22-1234567</span></li>
+                                   <li><span>Shipping Account: </span><span>FedEx (#123456789), Third Party</span></li>
+                                   <li><span>Freight Truck Options:</span><span>Liftgate: Yes, Inside Delivery: No, Appointment: Yes</span></li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="order_Shipping_billing_details">
+                         <div class="billing_details_col">
+                              <div class="billing_had d_flex d_flex_ac d_flex_jb">
+                                   <h4>Address #2</h4>
+                                   <div class="order_link_list d_flex d_flex_ac">
+                                        <a href="#" class="add_edit"><img src="images/add_edit.svg" alt="">Edit</a>
+                                        <a href="#" class="add_delete"><img src="images/add_delete.svg" alt="">Delete</a>
+                                        <a href="#" class="add_default"><img src="images/add_default.svg" alt="">Default address</a>
+                                   </div>
+                              </div>
+                              <ul>
+                                   <li><span>Name: </span><span>Maryann Todd</span></li>
+                                   <li><span>Company: </span><span>Todd’s Fire HQ</span></li>
+                                   <li><span>Primary Contact: </span><span>maryann@toddsfire.com, 201-343-3330</span></li>
+                                   <li><span>Location:  </span><span>4 Todd Court, Suite 101, Florham Park, NJ 07932</span></li>
+                                   <li><span>Tax ID:    </span><span>22-9876543</span></li>
+                                   <li><span>Shipping Account: </span><span>UPS (#654321), Prepaid</span></li>
+                                   <li><span>Freight Truck Options:</span><span>Liftgate: No, Inside Delivery: No, Appointment: No</span></li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="order_Shipping_billing_details">
+                         <div class="billing_details_col">
+                              <div class="billing_had d_flex d_flex_ac d_flex_jb">
+                                   <h4>Address #3</h4>
+                                   <div class="order_link_list d_flex d_flex_ac">
+                                        <a href="#" class="add_edit"><img src="images/add_edit.svg" alt="">Edit</a>
+                                        <a href="#" class="add_delete"><img src="images/add_delete.svg" alt="">Delete</a>
+                                        <a href="#" class="add_default"><img src="images/add_default.svg" alt="">Default address</a>
+                                   </div>
+                              </div>
+                              <ul>
+                                   <li><span>Name:</span><span>John Doe</span></li> 
+                                   <li><span>Company:</span><span>LPI Fire Testing Lab</span></li> 
+                                   <li><span>Primary Contact:</span><span>john.doe@lpifire.com, 555-987-6543</span></li> 
+                                   <li><span>Location: </span><span>500 Testing Ave, Newark, NJ 07105</span></li> 
+                                   <li><span>Tax ID:   </span><span>22-5555555</span></li> 
+                                   <li><span>Shipping Account:</span><span>Third Party (Acme Freight)</span></li> 
+                                   <li><span>Freight Truck Options:  </span><span>Liftgate: Yes, Inside Delivery: Yes, Appointment: No</span></li> 
+                              </ul>
+                         </div>
+                    </div>
+                    
+                  
+               </div>
+               <!-- my_address_edit_sec -->
+              <div class="my_address_edit_sec">
+                    <div class="title d_flex d_flex_ac d_flex_jb">
+                         <h2>My Shipping Addresses <span>Address #1</span></h2>                         
+                    </div>
+                    <div class="comman_checkout_form review_shipping_address" id="shippingaddress">                              
+                         <form>
+                                   <div class="from_row">                                        
+                                        <div class="colin">                                            
+                                             <div class="col">
+                                                  <h5>Shipping First Name <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="First Name" value="Burt">
+                                             </div>
+                                             <div class="col">
+                                                  <h5>Shipping Last Name <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="Last Name" value="Schwartz">
+                                             </div>
+                                             <div class="col">
+                                                  <h5>Shipping Email Address <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="Email Address" value="burt@toddsfire.com">
+                                             </div>
+                                             <div class="col">
+                                                  <h5>Shipping Phone <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="Phone" value="201-343-3331">
+                                             </div>                                             
+                                        </div>
+                                        <div class="colin">
+                                             <div class="col ">
+                                                  <h5>Company Name <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="Company Name" value="Todd’s Fire Warehouse">
+                                             </div>
+                                                                                                                                  
+                                        </div>
+                                        <div class="colin">
+                                             <div class="col ">
+                                                  <h5>Shipping Country <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="">Select</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>
+                                             <div class="col">
+                                                  <h5>Shipping ZIP / Postal Code <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="ZIP / Postal Code">
+                                             </div>     
+                                             <div class="col ">
+                                                  <h5>Shipping City <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="">Select</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>
+                                             <div class="col">
+                                                  <h5>Shipping State / Province <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="">Select</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>  
+                                             <div class="col">
+                                                  <h5>Shipping Address Line 1  <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="Address Line 2 (optional)  ">
+                                             </div>    
+                                             <div class="col">
+                                                  <h5>Shipping Address Line 2 (optional)   <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="Address Line 2 (optional)  ">
+                                             </div>
+                                             <div class="col">
+                                                  <h5>Location type <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="">Select (Residential/Commercial)</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>                                                                                             
+                                        </div>
+                                        <label for="shipping-account" class="checkbox">
+                                             <input type="checkbox" id="shipping-account" checked>
+                                             <span>Use your shipping account</span>
+                                        </label>
+                                        <div class="colin colin_last">
+                                             <div class="col ">
+                                                  <h5>Shipping company <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="Fedex">Fedex</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>
+                                             <div class="col">
+                                                  <h5>Shipping account number <em>*</em></h5>
+                                                  <input type="text" class="in" placeholder="account number" value="123456789">
+                                             </div>     
+                                             <div class="col col_single">
+                                                  <h5>Freight Terms <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="Third Party">Third Party</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>
+                                             <div class="col">
+                                                  <h5>Third party name <em>*</em></h5>
+                                                  <input type="text" class="in" value="Acme Freight Co.">
+                                             </div>  
+                                             <div class="col">
+                                                  <h5>Third party address  <em>*</em></h5>
+                                                  <input type="text" class="in" value="500 Freight Lane">
+                                             </div>    
+                                             
+                                             <div class="col">
+                                                  <h5>Third party city <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="Newark">Newark</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>         
+                                             <div class="col">
+                                                  <h5>Third party State / Province <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="NJ">NJ</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>         
+                                             <div class="col">
+                                                  <h5>Location type <em>*</em></h5>
+                                                  <select class="in">
+                                                       <option value="Commercial">Commercial</option>
+                                                       <option value="role1">role1</option>
+                                                       <option value="role2">role2</option>
+                                                  </select>
+                                             </div>                                                                                             
+                                        </div>
+                                        <!-- freight_truck_options start -->
+                                        <div class="freight_truck_options">
+                                             <h4>Freight Truck Options</h4>
+                                             <div class="colin colin_last">
+                                                  <div class="col freight_service col_single">
+                                                       <h5>Litigate service required <em>*</em></h5>
+                                                       <div class="yes_no">
+                                                            <label><input type="radio" name="freightservice" checked="">NO</label>
+                                                            <label><input type="radio" name="freightservice">YES</label>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col inside_delivery col_single">
+                                                       <h5>Inside delivery required <em>*</em></h5>
+                                                       <div class="yes_no">
+                                                            <label><input type="radio" name="insidedelivery" checked="">NO</label>
+                                                            <label><input type="radio" name="insidedelivery">YES</label>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col delivery_appointmen col_single">
+                                                       <h5>Delivery appointment required <em>*</em></h5>
+                                                       <div class="yes_no">
+                                                            <label><input type="radio" name="deliveryappointmen" checked="">NO</label>
+                                                            <label><input type="radio" name="deliveryappointmen">YES</label>
+                                                       </div>
+                                                  </div>
+
+
+                                                  <div class="col col_single">
+                                                       <h5>PO Number (optional) </h5>
+                                                       <input type="text" class="in" value="PO-12983">
+                                                  </div>
+                                                  <div class="col col_full">
+                                                       <h5>Order notes</h5>
+                                                       <input type="text" class="in" value="Please deliver on weekdays only.">
+                                                  </div>
+
+                                             </div>
+                                        </div>
+                                        <!-- freight_truck_options end -->
+                                        <div class="btn_col d_flex d_flex_jb d_flex_ac">
+                                             <a href="#" class="save_changes ">Back</a>
+                                             <a href="#" class="orange_btn back">Save changes</a>
+                                        </div>
+                                   </div>
+                         </form>
+                    </div>
+              </div>
+
+
+          </div>
+     </section>
+ 
+
+    <section class="mobile_col">
+          <div class="talk_expert">
+               <div class="text">
+                    <h3>Your Needs,<br>Our Expertise</h3>
+                    <p>Custom Fire Safety<br> Equipment Built<br>Just for You</p>
+               </div>
+               <img src="images/expert_man.png" class="expert_man" alt="">
+               <div class="bottom_text">
+                    <a href="#" class="white_btn">Talk to an expert <span></span></a>
+               </div>
+          </div>
+          <div class="safety_brands">
+               <div class="bg" style="background-image: url(./images/safety_barnds_bg.jpg);"></div>
+               <div class="wrapper">
+                    <h2>A trusted partner for the world’s leading fire safety brands</h2>
+                    <div class="wrap">
+                         <div class="inner d_flex d_flex_ac d_flex_jc">
+                              <a href="#"><img src="images/logo1.svg" alt=""></a>
+                              <a href="#"><img src="images/logo2.svg" alt=""></a>
+                              <a href="#"><img src="images/logo3.svg" alt=""></a>
+                              <a href="#"><img src="images/logo4.svg" alt=""></a>
+                              <a href="#"><img src="images/logo5.svg" alt=""></a>
+                              <a href="#"><img src="images/logo6.svg" alt=""></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section class="shipping_locations shipping_locations_expert">    
+          <div class="wrapper">
+               <div class="left_col">
+                    <div class="col">
+                         <h2>Nationwide Shipping from 3 Strategic Locations</h2>
+                         <p>Fast, reliable delivery to meet your fire safety needs wherever you are!</p>
+                         <ul class="d_flex d_flex_ac">
+                              <li>California</li>
+                              <li>Texas</li>
+                              <li>New Jersey</li>
+                         </ul>
+                         <a href="#" class="white_btn">Locations <span></span></a>
+                    </div>
+                    <div class="map"><img src="images/map.png" alt=""></div>
+               </div>
+               <div class="right_col">
+                    <div class="talk_expert">
+                         <div class="text">
+                              <h3>Your Needs,<br>Our Expertise</h3>
+                              <p>Custom Fire Safety<br> Equipment Built<br>Just for You</p>
+                         </div>
+                         <img src="images/expert_man.png" class="expert_man" alt="">
+                         <div class="bottom_text">
+                              <a href="#" class="white_btn">Talk to an expert <span></span></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- footer start -->
+     <footer>
+          <div class="top_footer">
+               <div class="wrapper">
+                    <a href="index.html" class="footer_logo"><img src="images/brand.svg" alt=""></a>
+                    <div class="inner d_flex ">
+                         <div class="left_col">
+                              <div class="colin">
+                                   <h3><a href="#">Shop</a></h3>
+                                   <ul>
+                                        <li><a href="#">Fire Extinguishers & Chemicals</a></li>
+                                        <li><a href="#">System Parts</a></li>
+                                        <li><a href="#">Extinguisher Parts</a></li>
+                                        <li><a href="#">First Aid Kits & Safety</a></li>
+                                        <li><a href="#">Cabinets, Accessories, & Covers</a></li>
+                                        <li><a href="#">Sprinkler Parts</a></li>
+                                        <li><a href="#">Exit & Emergency Lighting </a></li>
+                                        <li><a href="#">Pipes and Fittings</a></li>
+                                        <li><a href="#">Signs, Labels, & Tags</a></li>
+                                        <li><a href="#">Stands</a></li>
+                                        <li><a href="#">Brackets</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Company</a></h3>
+                                   <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Our Mission</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Custom Orders</a></h3>
+                                   <ul>
+                                        <li><a href="#">Consult Our Experts</a></li>
+                                        <li><a href="#">Custom Solutions</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Contact us</a></h3>
+                                   <ul>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#">Locations</a></li>
+                                   </ul>
+                              </div>
+                              <div class="colin">
+                                   <h3><a href="#">Support</a></h3>
+                                   <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="right_col">
+                              <div class="colin">
+                                   <h3>HQ</h3>
+                                   <div class="col">
+                                        <span><img src="images/f_tell.svg" alt=""></span>
+                                        <a href="#">(201) 343-3330</a>
+                                   </div>
+                                   <div class="col">
+                                        <span><img src="images/f_email.svg" alt=""></span>
+                                        <a href="#">info@lpifire.com</a>
+                                   </div>                                  
+                                   <div class="col">
+                                        <span><img src="images/f_map.svg" alt=""></span>
+                                        <p><strong>LPI Fire</strong><br>
+                                             421 N. Midland Avenue, 
+                                             Saddle Brook, NJ 07663
+                                        </p>
+                                   </div>
+                                   <div class="col">
+                                        <p><strong>Warehouses:</strong></p>
+                                        <ul>
+                                             <li>Vista, CA</li>
+                                             <li>Arlington, TX</li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="safe_secure">
+                         <div class="left_ss">
+                              <img src="images/dss.png" alt="">
+                              <p>Safe and secure checkout</p>
+                         </div>
+                         <div class="right_ss">
+                              <p>We accept</p>
+                              <ul>
+                                   <li><img src="images/AMEX.png" alt=""></li>
+                                   <li><img src="images/visa-logo.png" alt=""></li>
+                                   <li><img src="images/PayPal.png" alt=""></li>
+                                   <li><img src="images/Mastercard.png" alt=""></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="bttom_footer">
+               <div class="wrapper d_flex d_flex_ac d_flex_jb">
+                    <ul class="d_flex d_flex_ac">
+                         <li>© 2025 LPI Fire</li>
+                         <li>Rights reserved</li>
+                    </ul>
+                    <p>* All images, product descriptions, and information on this website are for reference only and may be subject to change without notice. LPI Fire is not responsible for errors, omissions, or third-party content.</p>
+               </div>
+          </div>
+     </footer>
+     <!-- footer end -->
+     <!-- <a href="#" class="sticky_whatsapp"><img src="images/whatsapp.svg" alt=""></a> -->
+     <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+     <script src="js/jquery.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+     <script src="js/lenis.js"></script>
+     <script src="js/swiper.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+     <script src="js/script.js"></script>
+
+<script>
+$(document).ready(function () {
+  $('#expiry').on('input', function () {
+    let val = $(this).val().replace(/\D/g, ''); // Remove non-digits
+    if (val.length > 6) val = val.slice(0, 6);  // Limit to 4 digits
+
+    // Format as MM / YY
+    if (val.length >= 3) {
+      val = val.slice(0, 2) + ' / ' + val.slice(2);
+    }
+
+    $(this).val(val);
+  });
+});
+</script>
+</body>
+</html>

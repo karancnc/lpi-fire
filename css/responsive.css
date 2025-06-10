@@ -16,6 +16,7 @@
     body .shipping_locations_expert .map { width: 45%; display: flex ; justify-content: center; align-items: center; }
     .location_contact .shipping_locations .wrapper{max-width: 100%;}
 
+    .checkout_sec .wrapper{padding: 0;}
 
 
 }
@@ -99,6 +100,10 @@
 
     .terms_condition .wrapper{padding: 0 40px;}
 
+    .checkout_sec .wrapper { padding:0 20px; }
+    .checkout_wrap .right_col { width: 31%; }
+    .checkout_wrap .left_col { width: 67%; }
+    .review_cart .review_cart_total h4 { width: 62.5%; }
 
 
 
@@ -213,6 +218,19 @@
 
     .create_account_sec { padding: 64px 20px 128px; }
 
+    .checkout_nav li a { width: 210px; }
+    .breadcrumb_sec { top: 64px; }
+    .delivery_summary .orange_btn { margin:20px auto 0; font-size: 15px;     padding: 12px;}
+    .delivery_summary .continue_shopping { margin: 30px auto 0; }
+    .delivery_summary .delivery_inner ul { padding: 14px 8px 14px 16px; }
+    .review_cart .review_cart_item { padding: 16px 0 16px 16px; }
+    .review_cart .review_cart_item .edit_delete_btn .mini_delete { margin-left: 8px; }
+    .review_cart .counter input { width: 38px; }
+    .review_cart .review_cart_item .price { min-width: 80px; }
+    .review_cart .review_cart_item li:nth-child(3) { width: 320px; padding: 0 10px 0 12px; }
+    .review_cart .review_cart_item li:nth-child(2) { width: 82px; height: 82px; min-width:  82px;}
+    .checkout_wrap .right_col { padding-top: 47px; }
+    .payment_sec { margin: 20px auto 0; }
 
 
 }
@@ -291,6 +309,24 @@
     .map_address .colin { padding: 20px 8px 10px; width: 33.33%; }
     .map_address .icon { margin-bottom: 16px; }
     .location_contact .shipping_locations .left_col { padding: 40px 0 40px 40px; }
+
+    .comman_popup { width: calc(100% - 32px); }
+    .comman_popup .left_col { width: 50%; }
+    .comman_popup .right_col { width: 50%; }
+    .comman_popup .wrap { padding: 0 20px 24px 20px; }
+
+    .checkout_nav li:not(:last-child) { margin-right: 10px; }
+    .checkout_nav li:not(:last-child)::after{display: none;}
+    .checkout_wrap .left_col { width:100%;float: none; }
+    .checkout_wrap .right_col { padding-top: 35px; width: 100%; position: relative; top: 0; float: none; }
+    .checkout_nav li a { width: 100%; }
+    .checkout_nav li strong {text-align: left;padding-left: 10px;}
+    .my_cart_inner .my_cart_item li:nth-child(2) { width: 56%; }
+
+    .checkout_thankyou_sec { padding: 24px 8px 180px; }
+  
+
+
 
 
 }
@@ -597,6 +633,85 @@
     .create_account_sec .checkbox { margin: 20px 0 30px; width: 100%; margin-left: 0; }
     .create_account_sec .checkbox span::after, 
     .create_account_sec .checkbox span::before { top: 5px; }
+
+
+    .comman_popup { width: calc(100% - 20px); max-height: calc(100vh - 20px);        overflow-y: auto;}
+    .comman_popup .left_col { width: 100%; }
+    .comman_popup .right_col { width:100%; min-height:50px;padding: 32px 56px;border-top: 1px solid #293D8233;}
+    .comman_popup .wrap { padding: 0 20px 24px 20px; }
+    .comman_popup .right_col img,
+    .comman_popup .right_col p {display: none;}
+    .comman_popup .icon_title { padding: 20px 16px 20px 16px; }
+    .comman_popup .wrap { padding: 0 16px 10px; }
+    .login_popup_otp .right_col,
+    .email_otp_popup  .right_col,
+    .phone_otp_popup .right_col{display: none !important;}
+    
+    .checkout_sec { padding: 8px 0 180px; }
+    .checkout_sec .wrapper { padding: 0 8px; }
+    .checkout_nav {border-bottom: 1px solid #D9D9D9;padding-bottom: 8px;}
+    .checkout_nav li:not(:last-child) { margin-right:4px; }
+    .checkout_nav li em { width: 24px; height: 24px; background-color: var(--red); color:var(--white); font-size: 16px; line-height: 24px; }
+    .checkout_nav li a{padding: 4px;}
+    .checkout_nav li strong { padding-left: 4px; width: calc(100% - 24px);font-size: 10px;line-height: 11px;}
+    .checkout_nav li:hover em, .checkout_nav li.active em { color: var(--red);background-color: var(--white);}
+    .comman_checkout_form h2 { padding: 11px 0; }
+    .checkout_wrap { margin-top: 24px; }
+
+    .review_cart .review_cart_header { padding: 16px 0; }
+    .review_cart .review_cart_item { padding: 16px 0;flex-wrap: wrap;align-items: flex-start;}
+    .review_cart .review_cart_item li:first-child { width: 32px; }
+    .review_cart .review_cart_item li:nth-child(2) { width: 48px; height: 48px; min-width: 48px; }
+    .review_cart .review_cart_item li:nth-child(3) { width: calc(100% - 80px); padding: 0 0 0 8px; }
+    .review_cart .review_cart_item .link { font-size: 14px; -webkit-line-clamp: 1; }
+    .review_cart .review_cart_item li:last-child { width: 100%;margin-top: 12px;}
+    .review_cart .review_cart_item .price { min-width: calc(100% - 155px);padding-left: 8px;}
+    .review_cart .review_cart_total{justify-content: space-between;}
+    .comman_checkout_form .from_row { padding:16px; }
+    .comman_checkout_form .colin { padding: 0 0 8px; margin-bottom: 16px; }
+    .comman_checkout_form .colin .col { width: 100%; margin-bottom: 8px; }
+    .comman_checkout_form .colin .col_single .in { width:100%; }
+    .comman_checkout_form .from_row .white_btn { position: relative; top: 0; right: 0; margin-right: 0; margin-bottom: 8px; }
+    .comman_checkout_form .checkbox { margin-left: 0; }
+    .comman_checkout_form .checkbox span { line-height: 18px; font-size: 14px;display: block;}
+    .comman_checkout_form .checkbox span::after, .comman_checkout_form .checkbox span::before { bottom: 0; margin: auto; }
+    .comman_checkout_form .colin_last { padding: 0; margin-bottom: 0; }
+    .comman_checkout_form { margin-bottom: 48px; }
+    .checkout_wrap .right_col { padding: 0 12px 0; }
+    .delivery_summary .delivery_inner ul { padding:20px 0px 20px 16px;}
+    .delivery_summary .orange_btn { margin: 20px auto 0; font-size: 20px;}
+    .delivery_summary .orange_btn em{display:none;}
+    .delivery_summary .continue_shopping { margin: 48px auto 0; }
+    .my_cart_inner .my_cart_item { padding: 16px 0 16px 8px; }
+    .my_cart_inner .my_cart_item li:first-child { width:  48px; height: 48px; }
+    .my_cart_inner .my_cart_item li:nth-child(2) { width: calc(100% - 48px); padding-left: 16px;margin-bottom: 8px;}
+    .my_cart_inner .my_cart_item .link { font-size: 14px; line-height: 24px; -webkit-line-clamp: 1; }
+    .my_cart_inner .my_cart_item h5 { font-size: 12px; line-height: 20px; }
+    .my_cart_inner .my_cart_item li:last-child{width: 50%;justify-content: flex-end;}
+    .my_cart_inner .my_cart_item .price { min-width: auto;padding-right: 8px;}
+    .my_cart_inner .my_cart_item li:nth-child(3) { width: 50%; padding-left: 64px;}
+    .my_cart_inner .my_cart_total .amount { width: auto; padding-right: 8px; }
+    .payment_select_wrap a.pay_bank_link {margin-top: 8px;}
+    .payment_select_wrap a { width: 100%; padding: 16px 32px; }
+    .payment_select_wrap a img { max-width: 56px; margin: 0 auto 16px; }
+    .comman_payment .billing_details_col { padding: 0 0 24px 0; }
+    .comman_payment .billing_details_col ul li { font-size: 12px; line-height: 24px; padding-left: 10px; }
+    .comman_payment .billing_details_col ul li span:first-child { width: 50%; }
+    .comman_payment .billing_details_col ul li::before { width: 3px; height: 3px; left: 1px; top: 10px; }
+    .comman_payment .checkbox span { line-height: 18px; font-size: 14px; }
+    .comman_payment .checkbox span a { margin-left: 5px; display: contents; line-height: 18px; font-size: 14px; }
+    .comman_payment .checkbox { margin: 32px 0; width: 100%; padding: 0; }
+    .comman_payment .place_order .orange_btn { padding: 16px 35px;max-width: calc(100% - 32px);}
+    .comman_payment .notification { padding:24px 0 0;align-items: flex-start;}
+
+
+    .checkout_thankyou { padding: 48px 16px 32px; }
+    .checkout_thankyou h3 { margin-top: 8px; padding-bottom: 0; margin-bottom: 0; }
+    .checkout_thankyou p { margin-bottom: 48px; font-size: 16px; }
+    .checkout_thankyou .btn_col { max-width: 100%; margin: 0 auto;flex-direction: column-reverse;}
+    .checkout_thankyou .btn_col a { width: 100%; }
+    .checkout_thankyou .btn_col a.continue_shopping{margin-top:24px;}
+    .checkout_thankyou_sec .my_cart_inner .my_cart_item li:nth-child(3) { opacity: 1; }
 
 
 

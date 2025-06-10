@@ -592,10 +592,100 @@ $(document).ready(function(){
         }
     });
 
+    if($('.checkout_nav').length > 0){
+        // $('.checkout_nav li a[href*=\\#]').on('click', function(event){ 
+        $('.checkout_nav li a[href*="#"]').on('click', function(event){ 
+            event.preventDefault(); 
+            var _this = $(this);
+            $('.checkout_nav li').removeClass('active');
+            _this.parent().addClass('active');
+            
+            if(!_this.hasClass('payment_method_link')){
+                $('.checkout_wrap ,.payment_sec').removeClass('open');
 
+                var target = this.hash.substr(1); 
+                console.log(target);
+                $('html, body').animate({
+                    scrollTop: $('#'+target).offset().top - 130
+                }, 500);
 
+            }else{
+                $('.checkout_wrap ,.payment_sec').addClass('open');
+            }
 
+        });
+    };
 
+    $('.payment_select_wrap a').click(function(e){
+        e.preventDefault();
+        var _this = $(this);
+        $('.payment_select_wrap a').removeClass('active');
+        _this.addClass('active');
+
+        if($('.payment_select_wrap .pay_card_link').hasClass('active')){
+             $('.pay_bank_transfer').removeClass('open');
+            $('.notesee,.pay_credit_card').addClass('open');
+        }
+
+        if($('.payment_select_wrap .pay_bank_link').hasClass('active')){
+            $('.pay_credit_card').removeClass('open');
+            $('.notesee,.pay_bank_transfer').addClass('open');
+        }
+
+    });
+
+    // order page
+    $('.order_link_list a.order_details').click(function(e){
+        e.preventDefault();
+        $('.my_order_sec , .my_order_details').addClass('open');
+    });
+    // $('.my_order_sec:not(.my_order_details) .order_had h3').click(function(e){
+    //     e.preventDefault();
+    //     var _this = $(this);
+    //     if(!_this.hasClass('open')){
+    //         _this.addClass('open');
+    //         _this.parent().next().find('.my_cart_inner').slideDown();
+    //     }else{
+    //         _this.removeClass('open');
+    //         _this.parent().next().find('.my_cart_inner').slideUp();
+    //     };
+    // });
+
+    $('.my_order_sec:not(.my_order_details) .order_results .order_had h3').click(function (e) {
+        e.preventDefault();
+
+        var _this = $(this);
+        var $orderResults = _this.closest('.order_results');
+        var $cartInner = $orderResults.find('.my_cart_inner');
+
+        if (!_this.hasClass('open')) {
+            _this.addClass('open');
+            $cartInner.slideDown();
+        } else {
+            _this.removeClass('open');
+            $cartInner.slideUp();
+        }
+    });
+
+    // my_address_sec
+    $('.my_address_sec .order_link_list a.add_edit').click(function (e) {
+        e.preventDefault();
+       $('.my_address_sec ,.my_address_edit_sec').addClass('open');
+    });
+    // my_profile_sec
+    $('.my_profile_sec .order_link_list a.add_edit').click(function (e) {
+        e.preventDefault();
+       $('.my_profile_edit_sec ,.my_profile_sec').addClass('open');
+    });
+    // tracking_number
+    $('.order_Shipping_date_status li .tracking_number').click(function (e) {
+        e.preventDefault();
+       $('.status_tracking,.overlay').addClass('open');
+    });
+    $('.overlay,.comman_popup .close_popup').click(function (e) {
+        e.preventDefault();
+       $('.status_tracking,.overlay').removeClass('open');
+    });
 
 
 });
