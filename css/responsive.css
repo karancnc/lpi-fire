@@ -110,7 +110,9 @@
     .order_sec .right_order { padding: 35px 20px 100px 20px; }
     .order_link_list a { padding: 8px 12px; margin-right: 12px; }
 
-
+    .my_wishlish_sec .categories_results_list .colin{ margin-right: 1.7%; }
+    .my_wishlish_sec .categories_results_list .colin:nth-child(3n) { margin-right:0; }
+    
 
 
 
@@ -243,6 +245,13 @@
     .order_results_title .right_col{width: 100%;margin-top: 16px;}
     .order_results_title .col { width: 32%; }
     .order_sec .title .order_link_list{width: 100%;margin-top: 16px;}
+   
+    .my_wishlish_sec .order_results_title .right_col,
+    .my_address_sec .order_results_title .right_col{width: auto;margin-top: 0;}
+    
+    .my_profile_sec .title .order_link_list { width: auto; margin-top:0; }
+    .order_Shipping_billing_details ul li{align-items: flex-start;}
+    .order_Shipping_billing_details ul li span{ width:50% !important; }
 
 
 
@@ -772,9 +781,32 @@
     .order_Shipping_billing_details ul li span:last-child{width: 50%;}
     .order_Shipping_billing_details ul li::before { width: 3px; height: 3px; left: -1px; top: 10px; }
     .order_Shipping_billing_details>div:not(:last-child){margin-bottom: 24px;}
+    .status_tracking { padding: 40px 24px 24px; }
+    .order_results_title .right_col .orange_btn{width: 100%;}
+    .my_wishlish_sec .categories_results_list { padding: 0; }
+    .my_wishlish_sec .categories_results_list .colin:first-child{margin-top: 0;}
 
+    .my_wishlish_sec .order_results_title .right_col{width: 100%;margin-top: 16px;}
+    .order_sec .title { border-bottom: 1px solid #DD1322; }
+    .my_profile_sec .title h2 { font-size: 24px;max-width: 50%;}
+    .my_profile_sec .title .order_link_list{width:auto;margin-top: 0;}
+    .my_profile_sec .title .order_link_list a{width: auto;font-size: 14px; padding: 8px 17px;}
+    .my_profile_sec .comman_checkout_form .btn_col a { width: calc(50% - 8px); }
+    .my_profile_edit_sec .comman_checkout_form .btn_col { margin: 8px auto 0; }
 
-
+    .my_address_sec .order_Shipping_billing_details .billing_details_col { padding: 0;}
+    .my_address_sec .order_Shipping_billing_details h4 { padding: 0; }
+    .my_address_sec .order_Shipping_billing_details { padding: 16px 24px; margin-bottom: 8px; }
+    .my_address_sec .order_Shipping_billing_details ul { padding-left:0; padding-right: 0; }
+    .my_address_sec .order_link_list{width: 100%;margin-bottom: 16px;}
+    .my_address_sec .order_link_list a.add_edit,
+    .my_address_sec .order_link_list a.add_delete{width: 40px;font-size: 0;justify-content: center;padding: 8px 0;}
+    .my_address_sec .order_link_list a.add_edit img,
+    .my_address_sec .order_link_list a.add_delete img{margin: 0;}
+    .my_address_sec .order_link_list a.add_default{width:calc(100% - 112px);justify-content: center;}
+    .my_address_edit_sec .title h2 { font-size: 20px; line-height: 24px; }
+    .my_address_edit_sec .title h2 span::before { top: 1px; }
+    .order_sec .comman_checkout_form { margin-bottom: 0; }
 
 
 
