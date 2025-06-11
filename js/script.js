@@ -432,117 +432,141 @@ $(document).ready(function(){
         const $uploadArea = $('.upload-area');
         const $input = $('#logo-upload');
 
-    // Handle click
-    $uploadArea.on('click', function () {
-        $input.click();
-    });
-
-    // Drag & drop
-    $uploadArea.on('dragover', function (e) {
-        e.preventDefault();
-        $uploadArea.addClass('dragover');
-    });
-
-    $uploadArea.on('dragleave', function () {
-        $uploadArea.removeClass('dragover');
-    });
-
-    $uploadArea.on('drop', function (e) {
-        e.preventDefault();
-        $uploadArea.removeClass('dragover');
-        const file = e.originalEvent.dataTransfer.files[0];
-        handleFile(file);
-    });
-
-    $input.on('change', function () {
-        const file = this.files[0];
-        handleFile(file);
-    });
-
-    function handleFile(file) {
-        if (!file) return;
-
-        const validTypes = ['image/png', 'image/jpeg'];
-        if (!validTypes.includes(file.type)) {
-            alert('Invalid file type. Only PNG or JPEG allowed.');
-            return;
-        }
-
-        if (file.size > 2 * 1024 * 1024) {
-            alert('File is too large. Max 2MB allowed.');
-            return;
-        }
-
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            $('.company_logo span').html(`<img src="${e.target.result}" alt="Logo" style="max-height:40px;">`);
-        };
-        reader.readAsDataURL(file);
-    }
-
-    // Handle text input updates
-    $('.product_info input, .product_info select').on('input change', function () {
-        const companyName = $('input[placeholder="Company Name"]').val();
-        const city = $('select.city').val();
-        const state = $('select.state').val();
-        const zip = $('input[placeholder="Zip"]').val();
-        const phone = $('input[placeholder="Phone Number"]').val();
-        const permit = $('input[placeholder="Permit Number"]').val();
-
-        $('.company_name').text(companyName || 'Company Name');
-        $('.company_location .city').text(city || 'City');
-        $('.company_location .state').text(state || 'State');
-        $('.company_location .zip').text(zip || 'Zip');
-        $('.company_contact .phone_number').text(phone || 'Phone number');
-        $('.company_contact .permit strong').text(permit || '');
-    });
-
-    // Clear fields
-       toggleClearButton();
-    $('.clear_fields').on('click', function (e) {
-        e.preventDefault();
-
-        // If button is disabled, do nothing
-        if ($(this).hasClass('disble')) {
-            return;
-        }
-
-        // Clear all values
-        $('.product_info input').val('');
-        $('.product_info select').val('');
-
-        // Reset preview content
-        $('.company_logo span').text('Company logo');
-        $('.company_name').text('Company Name');
-        $('.company_location .city').text('City');
-        $('.company_location .state').text('State');
-        $('.company_location .zip').text('Zip');
-        $('.company_contact .phone_number').text('Phone number');
-        $('.company_contact .permit strong').text('');
-
-        // Re-disable the button after clearing
-        $(this).addClass('disble');
-    });
-
-    $('.product_info input, .product_info select').on('input change', function () {
-        toggleClearButton();
-    });
-    function toggleClearButton() {
-        let allFilled = true;
-
-        $('.product_info input, .product_info select').each(function () {
-            if ($(this).val().trim() === '') {
-                allFilled = false;
-                return false; // exit loop early
-            }
+        // Handle click
+        $uploadArea.on('click', function () {
+            $input.click();
         });
 
-        if (allFilled) {
-            $('.clear_fields').removeClass('disble');
-        } else {
-            $('.clear_fields').addClass('disble');
+        // Drag & drop
+        $uploadArea.on('dragover', function (e) {
+            e.preventDefault();
+            $uploadArea.addClass('dragover');
+        });
+
+        $uploadArea.on('dragleave', function () {
+            $uploadArea.removeClass('dragover');
+        });
+
+        $uploadArea.on('drop', function (e) {
+            e.preventDefault();
+            $uploadArea.removeClass('dragover');
+            const file = e.originalEvent.dataTransfer.files[0];
+            handleFile(file);
+
+             if(!file){
+                $('.product_info .upload-box .upload_filename').hide();
+            }else{
+                $('.product_info .upload-box .upload_filename').show();
+                $('.product_info .upload-box .upload_filename .nameu').text(file.name);   
+            }
+        });
+        
+        $('.product_info .upload-box .upload_filename').hide();
+        $input.on('change', function () {
+            const file = this.files[0];
+            handleFile(file);
+            console.log($(this).val());
+            
+            if(!file){
+                $('.product_info .upload-box .upload_filename').hide();
+            }else{
+                $('.product_info .upload-box .upload_filename').show();
+                $('.product_info .upload-box .upload_filename .nameu').text(file.name);   
+            }
+        });
+        // remove_filename
+        $('.product_info .upload-box .upload_filename .remove_filename').click(function(){
+             $('.product_info .upload-box .upload_filename .nameu').text('');
+             $('.product_info .upload-box .upload_filename').hide();
+             $('.company_logo span').text('Company logo');
+        });
+
+        function handleFile(file) {
+            if (!file) return;
+
+            const validTypes = ['image/png', 'image/jpeg'];
+            if (!validTypes.includes(file.type)) {
+                alert('Invalid file type. Only PNG or JPEG allowed.');
+                return;
+            }
+
+            if (file.size > 2 * 1024 * 1024) {
+                alert('File is too large. Max 2MB allowed.');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                $('.company_logo span').html(`<img src="${e.target.result}" alt="Logo" style="max-height:40px;">`);
+            };
+            reader.readAsDataURL(file);
         }
-    }
+
+        // Handle text input updates
+        $('.product_info input, .product_info select').on('input change', function () {
+            const companyName = $('input[placeholder="Company Name"]').val();
+            const city = $('select.city').val();
+            const state = $('select.state').val();
+            const zip = $('input[placeholder="Zip"]').val();
+            const phone = $('input[placeholder="Phone Number"]').val();
+            const permit = $('input[placeholder="Permit Number"]').val();
+
+            $('.company_name').text(companyName || 'Company Name');
+            $('.company_location .city').text(city || 'City');
+            $('.company_location .state').text(state || 'State');
+            $('.company_location .zip').text(zip || 'Zip');
+            $('.company_contact .phone_number').text(phone || 'Phone number');
+            $('.company_contact .permit strong').text(permit || '');
+        });
+
+        // Clear fields
+        toggleClearButton();
+        $('.clear_fields').on('click', function (e) {
+            e.preventDefault();
+
+            // If button is disabled, do nothing
+            if ($(this).hasClass('disble')) {
+                return;
+            }
+
+            // Clear all values
+            $('.product_info input').val('');
+            $('.product_info select').val('');
+
+            // Reset preview content
+            $('.product_info .upload-box .upload_filename .nameu').text('');
+            $('.product_info .upload-box .upload_filename').hide();
+            $('.company_logo span').text('Company logo');
+            $('.company_name').text('Company Name');
+            $('.company_location .city').text('City');
+            $('.company_location .state').text('State');
+            $('.company_location .zip').text('Zip');
+            $('.company_contact .phone_number').text('Phone number');
+            $('.company_contact .permit strong').text('');
+
+            // Re-disable the button after clearing
+            $(this).addClass('disble');
+        });
+
+        $('.product_info input, .product_info select').on('input change', function () {
+            toggleClearButton();
+        });
+        function toggleClearButton() {
+            let allFilled = true;
+
+            $('.product_info input, .product_info select').each(function () {
+                if ($(this).val().trim() === '') {
+                    allFilled = false;
+                    return false; // exit loop early
+                }
+            });
+
+            if (allFilled) {
+                $('.clear_fields').removeClass('disble');
+            } else {
+                $('.clear_fields').addClass('disble');
+            }
+        }
         // Print
         $('.Print').on('click', function (e) {
             e.preventDefault();

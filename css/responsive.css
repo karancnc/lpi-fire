@@ -252,6 +252,8 @@
     .my_profile_sec .title .order_link_list { width: auto; margin-top:0; }
     .order_Shipping_billing_details ul li{align-items: flex-start;}
     .order_Shipping_billing_details ul li span{ width:50% !important; }
+    .order_sec .left_order { top: 100px;}
+    
 
 
 
