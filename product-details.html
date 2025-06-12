@@ -403,7 +403,7 @@
                                                   <div class="upload-text"><img src="images/upload_icon.png" alt=""> Drag files or click to upload</div>
                                                   <div class="upload-note">Please upload your company logo as a transparent PNG or JPEG file.<br>
                                                   Maximum file size allowed is 2MB</div>
-                                                  <input type="file" id="logo-upload" accept=".png, .jpg, .jpeg" hidden>
+                                                  <input type="file" id="logo-upload" class="logo-upload" accept=".png, .jpg, .jpeg" hidden>
                                              </div>
                                         </label>
                                         <div class="upload_filename">
@@ -1093,6 +1093,176 @@
           </div>
      </footer>
      <!-- footer end -->
+
+      <!-- customize_product_details_popup start -->
+     <div class="overlay1"></div>
+     <div class="comman_popup customize_product_details_popup">
+          <span class="close_popup1"><img src="images/pop_close.png" alt=""></span>
+          <div class="customize_product_details ">
+                    <div class="top_col d_flex d_flex_jb d_flex_ac">
+                         <div class="icon_title">
+                              <span><img src="images/customize_product_details_i.svg" alt=""></span>
+                              <h2>Customize product details</h2>
+                         </div>
+                         <div class="upload_label">
+                              <button id="uploadLabelBtn"><img src="images/upload_label.png" alt=""> Upload your own label</button>
+                              <input type="file" id="uploadLabelInput" accept="image/*" hidden>
+                         </div>
+                    </div>   
+                    <div class="inner d_flex">
+                         <div class="left_col">
+                              <div class="title">
+                                   <h3>Product info</h3>                                   
+                              </div>
+                              <div class="product_info">
+                                   <div class="colin">
+                                        <h4>Company Logo</h4>
+                                        <div class="upload-box">
+                                             <label for="logo-upload1" class="upload-label">
+                                                  <div class="upload-area">                                                  
+                                                       <div class="upload-text"><img src="images/upload_icon.png" alt=""> Drag files or click to upload</div>
+                                                       <div class="upload-note">Please upload your company logo as a transparent PNG or JPEG file.<br>
+                                                       Maximum file size allowed is 2MB</div>
+                                                       <input type="file" id="logo-upload1" class="logo-upload" accept=".png, .jpg, .jpeg" hidden>
+                                                  </div>
+                                             </label>
+                                             <div class="upload_filename">
+                                                  <span class="nameu"></span>
+                                                  <span class="remove_filename"><img src="images/add_delete.svg" alt=""></span>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="colin">
+                                        <h4>Company Name</h4>
+                                        <input type="text" class="in" placeholder="Company Name">
+                                   </div>
+                                   <div class="colin">
+                                        <h4>City</h4>
+                                        <select  class="in city">
+                                             <option value="">Select</option>
+                                             <option value="Ahemdabad">Ahemdabad</option>
+                                             <option value="Ahemdabad1">Ahemdabad1</option>
+                                        </select>
+                                   </div>
+                                   <div class="colin">
+                                        <h4>State</h4>
+                                        <select class="in state">
+                                             <option value="">Select</option>
+                                             <option value="Gujrat">Gujrat</option>
+                                             <option value="Rj">Rj</option>
+                                        </select>
+                                   </div>
+                                   <div class="colin">
+                                        <h4>Zip code</h4>
+                                        <input type="text" class="in" placeholder="Zip">
+                                   </div>
+                                   <div class="colin">
+                                        <h4>Phone Number</h4>
+                                        <input type="text" class="in" placeholder="Phone Number">
+                                   </div>
+                                   <div class="colin">
+                                        <h4>Permit Number</h4>
+                                        <input type="text" class="in" placeholder="Permit Number">
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="right_col">
+                              <div class="title">
+                                   <h3>Label Preview</h3>
+                                   <div class="rightc">
+                                        <a href="#" class="clear_fields disble"><img src="images/clear_fields.png" alt=""> Clear fields</a>
+                                        <a href="#" class="Print"><img src="images/print.png" alt=""> Print</a>
+                                   </div>
+                              </div>                       
+                              <div class="labelPreview_blog">
+                                   <ul class="year">
+                                        <li>2025</li>
+                                        <li>2025</li>
+                                        <li>2025</li>
+                                        <li>2025</li>
+                                        <li>2025</li>
+                                   </ul>                            
+                                   <ul class="months">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                        <li>11</li>
+                                        <li>12</li>
+                                   </ul>
+                                   <div class="company_logo">
+                                        <span>
+                                        Company logo  
+                                        </span>
+                                   </div>
+                                   <div class="company_name">
+                                        Company Name
+                                   </div>
+                                   <div class="company_location">
+                                        <span class="city">City</span><em>,</em>
+                                        <span class="state">State</span><em>,</em>
+                                        <span class="zip">Zip</span>
+                                   </div>
+                                   <div class="company_contact">
+                                        <span class="phone_number">Phone number</span><em>|</em>
+                                        <span class="permit">Permit: <strong></strong></span>
+                                   </div>
+                                   <div class="psi">
+                                        Hydrostatically tested at PSI
+                                   </div>
+                                   <ul class="day">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>0</li>
+                                   </ul>
+                                   <ul class="day">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>0</li>
+                                   </ul>
+                                   <ul class="day">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>0</li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div> 
+               <div class="btn_col d_flex d_flex_jb d_flex_ac">
+                    <a href="#" class="back">Back</a>
+                    <a href="#" class="orange_btn">Update cart</a>
+               </div>
+          </div>
+     </div>
+     <!-- customize_product_details_popup end -->
+
      <!-- <a href="#" class="sticky_whatsapp"><img src="images/whatsapp.svg" alt=""></a> -->
      <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
      <script src="js/jquery.min.js"></script>
@@ -1101,8 +1271,6 @@
      <script src="js/swiper.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
      <script src="js/script.js"></script>
-
-
-
+     
 </body>
 </html>

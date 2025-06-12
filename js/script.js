@@ -395,7 +395,8 @@ $(document).ready(function(){
         }, 500);
     });
 
-  
+    //  product-details page start
+
         if($('#uploadLabelBtn').length > 0){
 
             // Click button to open file dialog
@@ -427,166 +428,167 @@ $(document).ready(function(){
             });
         };
 
+    
+        $('.customize_product_details').each(function () {
+            const $section = $(this);
 
-    if($('#logo-upload').length > 0){
-        const $uploadArea = $('.upload-area');
-        const $input = $('#logo-upload');
+            // Elements specific to this section
+            const $uploadArea = $section.find('.upload-area');
+            const $input = $section.find('.logo-upload');
+            const $filenameBox = $section.find('.upload-box .upload_filename');
+            const $filenameText = $filenameBox.find('.nameu');
+            const $removeFilename = $filenameBox.find('.remove_filename');
+            const $logoPreview = $section.find('.company_logo span');
 
-        // Handle click
-        $uploadArea.on('click', function () {
-            $input.click();
-        });
+            // ---- Upload Logic ----
 
-        // Drag & drop
-        $uploadArea.on('dragover', function (e) {
-            e.preventDefault();
-            $uploadArea.addClass('dragover');
-        });
+            // Trigger input on area click
+            $uploadArea.on('click', function () {
+                $input.click();
+            });
 
-        $uploadArea.on('dragleave', function () {
-            $uploadArea.removeClass('dragover');
-        });
+            // Drag & drop handling
+            $uploadArea.on('dragover', function (e) {
+                e.preventDefault();
+                $uploadArea.addClass('dragover');
+            });
 
-        $uploadArea.on('drop', function (e) {
-            e.preventDefault();
-            $uploadArea.removeClass('dragover');
-            const file = e.originalEvent.dataTransfer.files[0];
-            handleFile(file);
+            $uploadArea.on('dragleave', function () {
+                $uploadArea.removeClass('dragover');
+            });
 
-             if(!file){
-                $('.product_info .upload-box .upload_filename').hide();
-            }else{
-                $('.product_info .upload-box .upload_filename').show();
-                $('.product_info .upload-box .upload_filename .nameu').text(file.name);   
-            }
-        });
-        
-        $('.product_info .upload-box .upload_filename').hide();
-        $input.on('change', function () {
-            const file = this.files[0];
-            handleFile(file);
-            console.log($(this).val());
-            
-            if(!file){
-                $('.product_info .upload-box .upload_filename').hide();
-            }else{
-                $('.product_info .upload-box .upload_filename').show();
-                $('.product_info .upload-box .upload_filename .nameu').text(file.name);   
-            }
-        });
-        // remove_filename
-        $('.product_info .upload-box .upload_filename .remove_filename').click(function(){
-             $('.product_info .upload-box .upload_filename .nameu').text('');
-             $('.product_info .upload-box .upload_filename').hide();
-             $('.company_logo span').text('Company logo');
-        });
-
-        function handleFile(file) {
-            if (!file) return;
-
-            const validTypes = ['image/png', 'image/jpeg'];
-            if (!validTypes.includes(file.type)) {
-                alert('Invalid file type. Only PNG or JPEG allowed.');
-                return;
-            }
-
-            if (file.size > 2 * 1024 * 1024) {
-                alert('File is too large. Max 2MB allowed.');
-                return;
-            }
-
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                $('.company_logo span').html(`<img src="${e.target.result}" alt="Logo" style="max-height:40px;">`);
-            };
-            reader.readAsDataURL(file);
-        }
-
-        // Handle text input updates
-        $('.product_info input, .product_info select').on('input change', function () {
-            const companyName = $('input[placeholder="Company Name"]').val();
-            const city = $('select.city').val();
-            const state = $('select.state').val();
-            const zip = $('input[placeholder="Zip"]').val();
-            const phone = $('input[placeholder="Phone Number"]').val();
-            const permit = $('input[placeholder="Permit Number"]').val();
-
-            $('.company_name').text(companyName || 'Company Name');
-            $('.company_location .city').text(city || 'City');
-            $('.company_location .state').text(state || 'State');
-            $('.company_location .zip').text(zip || 'Zip');
-            $('.company_contact .phone_number').text(phone || 'Phone number');
-            $('.company_contact .permit strong').text(permit || '');
-        });
-
-        // Clear fields
-        toggleClearButton();
-        $('.clear_fields').on('click', function (e) {
-            e.preventDefault();
-
-            // If button is disabled, do nothing
-            if ($(this).hasClass('disble')) {
-                return;
-            }
-
-            // Clear all values
-            $('.product_info input').val('');
-            $('.product_info select').val('');
-
-            // Reset preview content
-            $('.product_info .upload-box .upload_filename .nameu').text('');
-            $('.product_info .upload-box .upload_filename').hide();
-            $('.company_logo span').text('Company logo');
-            $('.company_name').text('Company Name');
-            $('.company_location .city').text('City');
-            $('.company_location .state').text('State');
-            $('.company_location .zip').text('Zip');
-            $('.company_contact .phone_number').text('Phone number');
-            $('.company_contact .permit strong').text('');
-
-            // Re-disable the button after clearing
-            $(this).addClass('disble');
-        });
-
-        $('.product_info input, .product_info select').on('input change', function () {
-            toggleClearButton();
-        });
-        function toggleClearButton() {
-            let allFilled = true;
-
-            $('.product_info input, .product_info select').each(function () {
-                if ($(this).val().trim() === '') {
-                    allFilled = false;
-                    return false; // exit loop early
+            $uploadArea.on('drop', function (e) {
+                e.preventDefault();
+                $uploadArea.removeClass('dragover');
+                const file = e.originalEvent.dataTransfer.files[0];
+                handleFile(file);
+                if (!file) {
+                    $filenameBox.hide();
+                } else {
+                    $filenameText.text(file.name);
+                    $filenameBox.show();
                 }
             });
 
-            if (allFilled) {
-                $('.clear_fields').removeClass('disble');
-            } else {
-                $('.clear_fields').addClass('disble');
+            $filenameBox.hide(); // Initially hide
+
+            // File input change
+            $input.on('change', function () {
+                const file = this.files[0];
+                handleFile(file);
+                if (!file) {
+                    $filenameBox.hide();
+                } else {
+                    $filenameText.text(file.name);
+                    $filenameBox.show();
+                }
+            });
+
+            // Remove filename and logo preview
+            $removeFilename.on('click', function () {
+                $filenameText.text('');
+                $filenameBox.hide();
+                $logoPreview.text('Company logo');
+                $input.val(''); // Clear input file
+            });
+
+            function handleFile(file) {
+                if (!file) return;
+
+                const validTypes = ['image/png', 'image/jpeg'];
+                if (!validTypes.includes(file.type)) {
+                    alert('Invalid file type. Only PNG or JPEG allowed.');
+                    return;
+                }
+
+                if (file.size > 2 * 1024 * 1024) {
+                    alert('File is too large. Max 2MB allowed.');
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    $logoPreview.html(`<img src="${e.target.result}" alt="Logo" style="max-height:40px;">`);
+                };
+                reader.readAsDataURL(file);
             }
-        }
-        // Print
-        $('.Print').on('click', function (e) {
-            e.preventDefault();
-            printLabel();
+
+            // ---- Input/Preview Binding ----
+
+            function toggleClearButton() {
+                let allFilled = true;
+
+                $section.find('.product_info input, .product_info select').each(function () {
+                    if ($(this).val().trim() === '') {
+                        allFilled = false;
+                        return false;
+                    }
+                });
+
+                if (allFilled) {
+                    $section.find('.clear_fields').removeClass('disble');
+                } else {
+                    $section.find('.clear_fields').addClass('disble');
+                }
+            }
+
+            $section.find('.product_info input, .product_info select').on('input change', function () {
+                const companyName = $section.find('input[placeholder="Company Name"]').val();
+                const city = $section.find('select.city').val();
+                const state = $section.find('select.state').val();
+                const zip = $section.find('input[placeholder="Zip"]').val();
+                const phone = $section.find('input[placeholder="Phone Number"]').val();
+                const permit = $section.find('input[placeholder="Permit Number"]').val();
+
+                $section.find('.company_name').text(companyName || 'Company Name');
+                $section.find('.company_location .city').text(city || 'City');
+                $section.find('.company_location .state').text(state || 'State');
+                $section.find('.company_location .zip').text(zip || 'Zip');
+                $section.find('.company_contact .phone_number').text(phone || 'Phone number');
+                $section.find('.company_contact .permit strong').text(permit || '');
+
+                toggleClearButton();
+            });
+
+            // Clear Fields Handler
+            $section.find('.clear_fields').on('click', function (e) {
+                e.preventDefault();
+                const $btn = $(this);
+                if ($btn.hasClass('disble')) return;
+
+                $section.find('.product_info input').val('');
+                $section.find('.product_info select').val('');
+                $filenameText.text('');
+                $filenameBox.hide();
+                $logoPreview.text('Company logo');
+                $section.find('.company_name').text('Company Name');
+                $section.find('.company_location .city').text('City');
+                $section.find('.company_location .state').text('State');
+                $section.find('.company_location .zip').text('Zip');
+                $section.find('.company_contact .phone_number').text('Phone number');
+                $section.find('.company_contact .permit strong').text('');
+
+                $btn.addClass('disble');
+            });
+
+            toggleClearButton(); // Run on init
         });
 
-        function printLabel() {
-            const content = document.querySelector('.label_preview').html();
-            const printWindow = window.open('', '', 'height=600,width=800');
-            printWindow.document.write('<html><head><title>Print Label</title>');
-            printWindow.document.write('<style>body{margin:0;font-family:sans-serif;} @media print { body { margin: 0; } }</style>');
-            printWindow.document.write('</head><body>');
-            printWindow.document.write(content);
-            printWindow.document.write('</body></html>');
-            printWindow.document.close();
-            printWindow.focus();
-            printWindow.print();
-            printWindow.close();
-        }
-    };
+        // popup 
+        $('.mini_cart .mini_cart_item .edit_delete_btn .mini_edit').click(function(e){
+            e.preventDefault();
+            $('.customize_product_details_popup ,.overlay1').addClass('open');
+        });
+        $('.customize_product_details_popup.comman_popup .close_popup1 ,.overlay1').click(function(){
+            $('.customize_product_details_popup , .overlay1').removeClass('open');            
+        });
+
+
+    //  product-details page end
+
+
+
+
     // faq section
     $('.faq_sec .colin .title').click(function(){
         var _this = $(this);
